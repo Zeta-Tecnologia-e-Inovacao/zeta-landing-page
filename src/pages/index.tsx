@@ -2,9 +2,11 @@ import React from 'react';
 import Header from '@/components/Header';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Jumbotron from '@/components/Jumbotron';
+import { Container } from '@nextui-org/react';
 
 const Home: NextPage = () => (
-  <>
+  <Container>
     <Head>
       <title>Zeta | Tecnologia e Inovação</title>
       <meta charSet='utf-8' />
@@ -20,7 +22,8 @@ const Home: NextPage = () => (
       <link rel='icon' href='/images/logo.svg' />
     </Head>
     <Header />
-  </>
+    <Jumbotron />
+  </Container>
 );
 
 export default Home;
