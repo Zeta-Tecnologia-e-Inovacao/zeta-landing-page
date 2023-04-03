@@ -1,27 +1,31 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import { Button, Container, Link, Navbar, Text } from '@nextui-org/react'
+import Logo from '../../public/images/logo.svg'
 
 const Header: NextPage = () => {
   return (
-    <Container>
+    <Container fluid>
       <Navbar isCompact isBordered variant="sticky">
         <Navbar.Brand>
-          <Text b color="inherit" hideIn="xs">
-            Zeta
-          </Text>
+          <Button auto light href="/">
+              <Image
+                src={Logo}
+                alt='logo'
+                width={30}
+                height={30}
+              />
+            </Button>
         </Navbar.Brand>
         <Navbar.Content hideIn="xs" variant="underline">
-          <Navbar.Link isActive href="#">Nossas soluções</Navbar.Link>
-          <Navbar.Link href="#">Sobre nós</Navbar.Link>
-          <Navbar.Link href="#">Contato</Navbar.Link>
+          <Navbar.Link isActive href="/">Home</Navbar.Link>
+          <Navbar.Link href="solutions">Nossas soluções</Navbar.Link>
+          <Navbar.Link href="about">Sobre nós</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
-          <Navbar.Link color="inherit" href="#">
-            Login
-          </Navbar.Link>
           <Navbar.Item>
-            <Button auto flat as={Link} href="#">
-              Criar uma conta
+            <Button auto flat as={Link} href="contact">
+            Fale conosco
             </Button>
           </Navbar.Item>
         </Navbar.Content>
