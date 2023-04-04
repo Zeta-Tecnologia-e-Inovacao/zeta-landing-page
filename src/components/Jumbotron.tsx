@@ -1,20 +1,27 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import {
-  Button, Col, Grid, Text,
+  Button, Container, Text, Tooltip,
 } from '@nextui-org/react';
 
 const Jumbotron: NextPage = () => (
-  <Grid.Container justify='flex-start' css={{ height: '500px', backgroundImage: 'url(/images/sunset.jpg)' }}>
-    <Grid xs={12} sm={6} alignItems='center'>
-      <Col css={{ width: '100%' }}>
-        <Text h1 weight='extrabold' color='white'>
-          Soluções de Tecnologia e Inovação
-        </Text>
-        <Button light bordered auto css={{ width: '30%', marginTop: '20px' }}>Saiba mais</Button>
-      </Col>
-    </Grid>
-  </Grid.Container>
+  <Container
+    fluid
+    css={{
+      display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', minHeight: '400px',
+    }}
+  >
+    <Text h1 weight='extrabold'>
+      Impulsione o potencial do seu negócio com nossas soluções de TI de última geração
+    </Text>
+    <Text size={24}>
+      Nós fornecemos soluções personalizadas que ajudam sua startup
+      a crescer e se destacar no mercado digital.
+    </Text>
+    <Tooltip content='Temos uma especialista à sua disposição!' rounded placement='bottomStart' color='primary'>
+      <Button light bordered auto css={{ width: '20%', marginTop: '20px' }}>Saiba mais</Button>
+    </Tooltip>
+  </Container>
 );
 
 export default Jumbotron;

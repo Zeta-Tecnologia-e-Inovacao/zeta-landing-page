@@ -1,14 +1,12 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import {
-  Button, Container, Link, Navbar,
-} from '@nextui-org/react';
+import { Button, Link, Navbar } from '@nextui-org/react';
 import Logo from '../../public/images/logo.svg';
 
 const Header: NextPage = () => (
-  <Container fluid>
-    <Navbar isCompact isBordered variant='sticky'>
+  <header>
+    <Navbar isBordered variant='sticky'>
       <Navbar.Brand>
         <Button auto light href='/'>
           <Image
@@ -32,7 +30,7 @@ const Header: NextPage = () => (
         </Navbar.Item>
       </Navbar.Content>
     </Navbar>
-  </Container>
+  </header>
 );
 
 export default Header;
