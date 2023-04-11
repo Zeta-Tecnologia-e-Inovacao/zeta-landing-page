@@ -1,9 +1,12 @@
 import React from 'react';
-import Header from '@/components/Header';
+import Header from '@/components/Header/Header';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Jumbotron from '@/components/Jumbotron';
+import Jumbotron from '@/components/Jumbotron/Jumbotron';
+import CardInfo from '@/components/InfoCard/CardsInfo';
 import { Container, Spacer } from '@nextui-org/react';
+
+
 
 const Home: NextPage = () => (
   <Container>
@@ -21,10 +24,20 @@ const Home: NextPage = () => (
       <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
       <link rel='icon' href='/images/logo.svg' />
     </Head>
-    <Header />
-    <Spacer y={1} />
-    <Jumbotron />
-    <Spacer y={1} />
+
+      {/* NavBar */}
+      <Header />
+
+      {/* Jumbotron */}
+      <Spacer y={1} />
+      <Jumbotron />
+
+      {/* CardPage */}
+      <Spacer y={1} />
+      <CardInfo/>
+      
+      <Spacer y={1} />
+   
   </Container>
 );
 
