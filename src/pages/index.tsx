@@ -4,6 +4,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Jumbotron from '@/components/Jumbotron';
 import { Container, Spacer } from '@nextui-org/react';
+import Services from '@/components/Services';
 
 const Home: NextPage = () => (
   <Container>
@@ -25,6 +26,7 @@ const Home: NextPage = () => (
     <Spacer y={1} />
     <Jumbotron />
     <Spacer y={1} />
+    <Services />
   </Container>
 );
 
