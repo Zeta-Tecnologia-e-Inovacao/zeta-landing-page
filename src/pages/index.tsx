@@ -22,15 +22,12 @@ const Home: NextPage = () => (
       <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
       <link rel='icon' href='/images/logo.svg' />
     </Head>
-      {/* NavBar */}
-      <Header />
-      {/* Jumbotron */}
-      <Spacer y={1} />
-      <Jumbotron />
-      {/* CardPage */}
-      <Spacer y={1} />
-      <Card/>  
-      <Spacer y={1} />
+    <Header />
+    <Spacer y={1} />
+    <Jumbotron />
+    <Spacer y={2} />
+    <Card />
+    <Spacer y={3} />
   </Container>
 );
 
