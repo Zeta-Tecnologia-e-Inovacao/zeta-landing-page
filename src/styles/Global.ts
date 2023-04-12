@@ -1,7 +1,6 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
-
-const globalStyle = createGlobalStyle`
+export const globalStyle = createGlobalStyle`
 
 /* ------   ELEMENTOS REUTILIZAVEIS  ------ */
 .text-transition-slider {
@@ -11,25 +10,28 @@ const globalStyle = createGlobalStyle`
 .text-transition-slider-navbar {
   animation: 2.8s anim-lineUp ease-out;
 }
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
     transform: translateX(-60%);
   }
+
   20% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
     transform: translateX(0%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0%);
   }
+
 }
-
-
 
 :root {
   --max-width: 1100px;
@@ -49,11 +51,12 @@ const globalStyle = createGlobalStyle`
     #54d6ff33 120deg,
     #0071ff33 160deg,
     transparent 360deg
-  );
+  )
+
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
-  );
+  )
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
@@ -65,13 +68,13 @@ const globalStyle = createGlobalStyle`
     #00000010,
     #00000010,
     #00000080
-  );
+  )
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
-}
+ }
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -85,7 +88,7 @@ const globalStyle = createGlobalStyle`
       rgba(1, 65, 255, 0),
       rgba(1, 65, 255, 0),
       rgba(1, 65, 255, 0.3)
-    );
+    )
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
@@ -97,81 +100,35 @@ const globalStyle = createGlobalStyle`
       #ffffff10,
       #ffffff10,
       #ffffff80
-    );
+    )
 
     --callout-rgb: 20, 20, 20;
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-}
+ }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+ }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
+ }
 
 body {
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))rgb(var(--background-start-rgb));
+ }
 
 a {
   color: inherit;
   text-decoration: none;
-}
+ }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-
-element.style {
-  width: 516px;
-  position: relative;
-  left: 0px;
-  top: 0px;
-  z-index: 999;
-  opacity: 1;
-}
-.slick-initialized .slick-slide {
-  display: block;
-}
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-`
-
+`;
 export default globalStyle;
