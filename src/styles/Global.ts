@@ -7,10 +7,14 @@ const globalStyle = createGlobalStyle`
 .text-transition-slider {
   animation: 3.5s anim-lineUp ease-out;
 }
+
+.text-transition-slider-navbar {
+  animation: 2.8s anim-lineUp ease-out;
+}
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
-    transform: translateX(-80%);
+    transform: translateX(-60%);
   }
   20% {
     opacity: 0;
@@ -152,21 +156,7 @@ element.style {
   height: 100%;
   min-height: 1px;
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-*, ::after, ::before {
-  box-sizing: border-box;
-}
 
-div {
-  display: block;
-}
 .slick-slider {
   position: relative;
   display: block;
