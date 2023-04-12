@@ -28,9 +28,9 @@
   },
   "include": [
     "next-env.d.ts",
-    "*/*/*.ts",
-    "*/*/*.tsx"
-  ],
+    "**/*.ts",
+    "**/*.tsx"
+, "src/components/jumbotron/Jumbotron.tsx", "src/components/card/infoCard.tsx", "src/components/card/Cards.tsx", "src/components/header/Navbar.tsx"  ],
   "exclude": [
     "node_modules"
   ]
