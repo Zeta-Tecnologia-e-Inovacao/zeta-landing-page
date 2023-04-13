@@ -1,10 +1,13 @@
 import React from 'react';
-import Header from '@/components/Header';
+import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Jumbotron from '@/components/jumbotron/Jumbotron';
+import Card from '@/components/card/Cards';
+import { Container, Spacer } from '@nextui-org/react';
 
 const Home: NextPage = () => (
-  <>
+  <Container>
     <Head>
       <title>Zeta | Tecnologia e Inovação</title>
       <meta charSet='utf-8' />
@@ -20,7 +23,12 @@ const Home: NextPage = () => (
       <link rel='icon' href='/images/logo.svg' />
     </Head>
     <Header />
-  </>
+    <Spacer y={1} />
+    <Jumbotron />
+    <Spacer y={2} />
+    <Card />
+    <Spacer y={3} />
+  </Container>
 );
 
 export default Home;
