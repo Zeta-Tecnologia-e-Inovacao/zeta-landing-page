@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Text } from '@nextui-org/react';
+import { Navbar, Text, Dropdown } from '@nextui-org/react';
 import type { NextPage } from 'next';
 
 const Header: NextPage = () => (
@@ -20,7 +20,17 @@ const Header: NextPage = () => (
       <Navbar.Link isActive href='#'>Home</Navbar.Link>
       <Navbar.Link href='#'>Customers</Navbar.Link>
       <Navbar.Link href='#'>Soluções</Navbar.Link>
-      <Navbar.Link href='#'>Sobre nós</Navbar.Link>
+      <Dropdown>
+        <Dropdown.Button flat>Sobre nós</Dropdown.Button>
+        <Dropdown.Menu aria-label='Static Actions'>
+          <Navbar.Link href='/missao-valores'>Missão Valores</Navbar.Link>
+          <Navbar.Link href='/quem-somos'>Quem Somos</Navbar.Link>
+          <Dropdown.Item key='delete' color='error'>
+            Voltar
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+
     </Navbar.Content>
   </Navbar>
 );
