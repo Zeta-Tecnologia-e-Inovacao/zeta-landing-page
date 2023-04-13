@@ -23,7 +23,7 @@ const Services: NextPage = () => {
       img: '/images/fruit-4.jpeg',
     },
     {
-      title: 'Consultoria em TI',
+      title: 'Impressora 3D',
       img: '/images/fruit-5.jpeg',
     },
   ];
