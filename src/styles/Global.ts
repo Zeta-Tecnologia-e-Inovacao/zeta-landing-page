@@ -115,20 +115,10 @@ export const globalStyle = createGlobalStyle`
   margin: 0;
  }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
- }
-
 body {
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))rgb(var(--background-start-rgb));
  }
 
-a {
-  color: inherit;
-  text-decoration: none;
- }
-
 `;
+
 export default globalStyle;
