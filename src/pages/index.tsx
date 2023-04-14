@@ -21,6 +21,14 @@ const Home: NextPage = () => (
       <meta property='og:title' content='Zeta | Tecnologia e Inovação' />
       <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
       <link rel='icon' href='/images/logo.svg' />
+      {/* <!-- Bootstrap CSS --> */}
+      <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossOrigin='anonymous' />
+      <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css' />
+      {/* <!--==================== UNICONS ====================--> */}
+      <link rel='stylesheet' href='https://unicons.iconscout.com/release/v4.0.0/css/line.css' />
+      {/* <!-- ================ Importar BOOTSTRAP --> */}
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' crossOrigin='anonymous' />
+
     </Head>
     <Header />
     <Spacer y={1} />
