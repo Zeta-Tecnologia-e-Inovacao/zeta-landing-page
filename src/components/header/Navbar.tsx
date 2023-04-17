@@ -16,7 +16,7 @@ const Header: NextPage = () => (
         }}
       >
         <Image
-          src='/images/Zeta-lado.png'
+          src='/images/ZetaLogo.png'
           alt='Default image'
           width={150}
           height={150}

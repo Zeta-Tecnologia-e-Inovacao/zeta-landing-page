@@ -1,8 +1,9 @@
 import React from 'react';
 import { Grid, Container } from '@nextui-org/react';
 import type { NextPage } from 'next';
-import InfoCard from './infoCard';
-import CardDev from './CardDev';
+import CardWeb from './CardControll/CardWeb';
+import CardIot from './CardControll/CardIot';
+import CardTeste from './CardControll/CardEmbarcados';
 
 const CardPage: NextPage = () => (
 
@@ -10,40 +11,26 @@ const CardPage: NextPage = () => (
     <Grid.Container
       gap={2}
     >
+
       <Grid
         xs={12}
         sm={4}
       >
-        <InfoCard
-          title='Iot'
-          imageURL='https://littlevisuals.co/images/red_dawn.jpg'
-        />
+        <CardIot />
       </Grid>
 
       <Grid
         xs={12}
         sm={4}
       >
-        <InfoCard
-          title='Sistemas'
-          imageURL='https://littlevisuals.co/images/sunset.jpg'
-        />
+        <CardTeste />
       </Grid>
 
       <Grid
         xs={12}
         sm={4}
       >
-        <InfoCard
-          title='Compressor Inteligente'
-          imageURL='https://littlevisuals.co/images/tail.jpg'
-        />
-      </Grid>
-    </Grid.Container>
-
-    <Grid.Container gap={2} justify='center'>
-      <Grid xs={12} sm={4}>
-        <CardDev />
+        <CardWeb />
       </Grid>
     </Grid.Container>
   </Container>
