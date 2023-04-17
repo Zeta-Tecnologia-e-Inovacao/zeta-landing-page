@@ -21,6 +21,8 @@ const Home: NextPage = () => (
       <meta property='og:title' content='Zeta | Tecnologia e Inovação' />
       <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
       <link rel='icon' href='/images/logo.svg' />
+      <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet' />
+
     </Head>
     <Header />
     <Spacer y={1} />
