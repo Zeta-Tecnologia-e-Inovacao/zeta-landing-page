@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Jumbotron from '@/components/jumbotron/Jumbotron';
+import JumbotronTeste from '@/components/jumbotron/teste';
 import Card from '@/components/card/Cards';
 import { Container, Spacer } from '@nextui-org/react';
 
@@ -24,7 +24,7 @@ const Home: NextPage = () => (
     </Head>
     <Header />
     <Spacer y={1} />
-    <Jumbotron />
+    <JumbotronTeste />
     <Spacer y={2} />
     <Card />
     <Spacer y={3} />

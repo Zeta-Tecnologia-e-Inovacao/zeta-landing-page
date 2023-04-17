@@ -4,6 +4,7 @@ import { Tooltip, Button } from '@nextui-org/react';
 import * as S from './styles';
 
 const JumbotronTeste: NextPage = () => (
+
   <S.JumbotronConfig>
     <div className='container mt-3'>
       <div className='mt-4 p-5 ground text-white rounded'>
