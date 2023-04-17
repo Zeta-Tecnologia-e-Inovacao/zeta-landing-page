@@ -1,11 +1,11 @@
 import React from 'react';
 import { Navbar, Dropdown, Image } from '@nextui-org/react';
 import type { NextPage } from 'next';
-import { MenuHeader } from './styles';
+import * as S from './styles';
 
 const Header: NextPage = () => (
 
-  <MenuHeader>
+  <S.MenuHeader>
     <Navbar className='text-transition-slider-navbar' isBordered variant='sticky'>
       <Navbar.Toggle showIn='xs' />
       <Navbar.Brand
@@ -37,7 +37,7 @@ const Header: NextPage = () => (
         </Dropdown>
       </Navbar.Content>
     </Navbar>
-  </MenuHeader>
+  </S.MenuHeader>
 );
 
 export default Header;

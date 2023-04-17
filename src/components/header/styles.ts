@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuHeader = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 ////////////////// HEADER ///////////////
 .ul {
@@ -14,6 +15,8 @@ export const MenuHeader = styled.div`
 .nav-link{
   position: relative;
   display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 .nav-link::before {
   content: '';
