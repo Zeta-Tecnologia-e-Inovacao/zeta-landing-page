@@ -109,11 +109,23 @@ export const globalStyle = createGlobalStyle`
   }
  }
 
+ /*  Base  */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
  }
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+ }
+
+ html {
+  scroll-behavior: smooth;
+  }
+
 
 body {
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))rgb(var(--background-start-rgb));
