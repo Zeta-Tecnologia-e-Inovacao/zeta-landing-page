@@ -4,7 +4,7 @@ import {
 } from '@nextui-org/react';
 import { NextPage } from 'next';
 
-const CardEmbarcado: NextPage = () => (
+const CardTeste: NextPage = () => (
 
   <Card css={{ w: '100%', h: '400px' }}>
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
@@ -66,4 +66,4 @@ const CardEmbarcado: NextPage = () => (
   </Card>
 );
 
-export default CardEmbarcado;
+export default CardTeste;
