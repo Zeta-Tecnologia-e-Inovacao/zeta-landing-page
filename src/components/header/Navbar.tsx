@@ -1,43 +1,46 @@
 import React from 'react';
-import { Navbar, Dropdown, Image } from '@nextui-org/react';
 import type { NextPage } from 'next';
-import { MenuHeader } from './styles';
+import { Image, Link } from '@nextui-org/react';
+import * as S from './styles';
 
 const Header: NextPage = () => (
 
-  <MenuHeader>
-    <Navbar className='text-transition-slider-navbar' isBordered variant='sticky'>
-      <Navbar.Toggle showIn='xs' />
-      <Navbar.Brand
-        css={{
-          '@xs': {
-            w: '12%',
-          },
-        }}
-      >
-        <Image
-          src='/images/ZetaLogo.png'
-          alt='Default image'
-          width={150}
-          height={150}
-        />
+  <S.MenuHeader>
+    <nav className='navbar navbar-expand-lg navbar-dark bg-dark menu'>
+      <div className='container text-transition-slider-navbar'>
+        <Image src='/images/Zeta-Logo.png' className='navbar-brand logo' />
+        <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#collapsibleNavbar'>
+          <span className='navbar-toggler-icon' />
+        </button>
 
-      </Navbar.Brand>
-      <Navbar.Content className='ul'>
-        <Navbar.Link href='#' className='nav-link li'>Home</Navbar.Link>
-        <Navbar.Link href='#services' className='nav-link li'>Serviços</Navbar.Link>
-        <Navbar.Link href='#' className='nav-link li'>Testes</Navbar.Link>
-        <Navbar.Link href='#solucoes' className='nav-link li'>Soluções</Navbar.Link>
-        <Dropdown>
-          <Dropdown.Button flat>Sobre nós</Dropdown.Button>
-          <Dropdown.Menu aria-label='Static Actions'>
-            <Dropdown.Item><Navbar.Link href='/missao-valores'>Missão Valores</Navbar.Link></Dropdown.Item>
-            <Dropdown.Item><Navbar.Link href='/quem-somos'>Quem Somos</Navbar.Link></Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-      </Navbar.Content>
-    </Navbar>
-  </MenuHeader>
+        <div className='collapse navbar-collapse' id='collapsibleNavbar'>
+          <ul className='navbar-nav ms-auto '>
+
+            <li className='nav-item'>
+              <Link className='nav-link' href='#solucoes'>Soluções</Link>
+            </li>
+
+            <li className='nav-item'>
+              <Link className='nav-link' href='#services'>Serviços</Link>
+            </li>
+
+            <li className='nav-item'>
+              <Link className='nav-link' href='#contact'>Contato</Link>
+            </li>
+            
+            <li className='nav-item dropdown'>
+              <span className='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown'>Sobre nós</span>
+              <ul className='dropdown-menu'>
+                <li><Link href='/quem-somos' className='dropdown-item'>Quem Somos</Link></li>
+                <li><Link href='/missao-valores' className='dropdown-item'>Missão e Valores</Link></li>
+                <li><Link href='#teste' className='dropdown-item'>A third link</Link></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </S.MenuHeader>
 );
 
 export default Header;
