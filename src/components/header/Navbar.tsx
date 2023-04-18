@@ -27,7 +27,6 @@ const Header: NextPage = () => (
             <li className='nav-item'>
               <Link className='nav-link' href='#contact'>Contato</Link>
             </li>
-            
             <li className='nav-item dropdown'>
               <span className='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown'>Sobre nós</span>
               <ul className='dropdown-menu'>
