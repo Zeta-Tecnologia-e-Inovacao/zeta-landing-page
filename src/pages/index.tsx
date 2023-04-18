@@ -1,8 +1,9 @@
 import React from 'react';
-import Header from '@/components/Header';
+import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Jumbotron from '@/components/Jumbotron';
+import Jumbotron from '@/components/jumbotron/Jumbotron';
+import Card from '@/components/card/Cards';
 import { Container, Spacer } from '@nextui-org/react';
 import Services from '@/components/Services';
 
@@ -21,12 +22,15 @@ const Home: NextPage = () => (
       <meta property='og:title' content='Zeta | Tecnologia e Inovação' />
       <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
       <link rel='icon' href='/images/logo.svg' />
+      <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet' />
+
     </Head>
     <Header />
     <Spacer y={1} />
     <Jumbotron />
-    <Spacer y={1} />
-    <Services />
+    <Spacer y={2} />
+    <Card />
+    <Spacer y={3} />
   </Container>
 );
 
