@@ -6,7 +6,7 @@ import * as S from './styles';
 const Header: NextPage = () => (
 
   <S.MenuHeader>
-    <nav className='navbar navbar-expand-lg navbar-dark bg-dark menu'>
+    <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
       <div className='container text-transition-slider-navbar'>
         <Image src='/images/Zeta-Logo.png' className='navbar-brand logo' />
         <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#collapsibleNavbar'>
@@ -30,9 +30,9 @@ const Header: NextPage = () => (
             <li className='nav-item dropdown'>
               <span className='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown'>Sobre nós</span>
               <ul className='dropdown-menu'>
-                <li><Link href='/quem-somos' className='dropdown-item'>Quem Somos</Link></li>
-                <li><Link href='/missao-valores' className='dropdown-item'>Missão e Valores</Link></li>
-                <li><Link href='#teste' className='dropdown-item'>A third link</Link></li>
+                <li><Link href='/quem-somos' className='dropdown-item dropdown-name'>Quem Somos</Link></li>
+                <li><Link href='/missao-valores' className='dropdown-item dropdown-name'>Missão e Valores</Link></li>
+                <li><Link href='#teste' className='dropdown-item dropdown-name'>A third link</Link></li>
               </ul>
             </li>
           </ul>
@@ -40,6 +40,7 @@ const Header: NextPage = () => (
       </div>
     </nav>
   </S.MenuHeader>
+
 );
 
 export default Header;

@@ -17,13 +17,21 @@ font-family: 'Poppins', sans-serif; */
 }
 
 .logo {
-  width: 140px;
-  height: 55px;
+  width: 166px;
+  height: 65px;
 }
 
 a, span{
   font-family: 'Poppins', sans-serif;
-  color: rgb(214, 219, 220);
+  color: #fff;
+}
+
+.dropdown-name{
+  color: black;
+}
+
+.dropdown-menu{
+  background-color: white;
 }
 
 .nav-link{
