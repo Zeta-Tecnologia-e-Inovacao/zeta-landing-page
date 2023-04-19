@@ -15,7 +15,6 @@ const JumbotronTeste: NextPage = () => (
       <h3>Nós fornecemos soluções personalizadas</h3>
       <h3>que ajudam sua startup a crescer</h3>
       <h3>e se destacar no mercado digital.</h3>
-
     </div>
   </S.JumbotronConfig>
 );
