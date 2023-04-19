@@ -11,11 +11,11 @@ const JumbotronTeste: NextPage = () => (
     <div className='p-5 jumbo text-white'>
       <h2 className='text-jumbo'>Impulsione o potencial do seu </h2>
       <h2>negócio com nossas soluções TI</h2>
-      <h2>de última geração.</h2><br /><br /><br />
+      <h2>de última geração.</h2>
       <h3>Nós fornecemos soluções personalizadas</h3>
       <h3>que ajudam sua startup a crescer</h3>
       <h3>e se destacar no mercado digital.</h3>
-     
+
     </div>
   </S.JumbotronConfig>
 );
