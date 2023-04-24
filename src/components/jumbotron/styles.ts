@@ -57,17 +57,32 @@ font-family: 'Poppins', sans-serif; */
   }
 }
 
+/* MAIN IMAGE */
+.main-image {
+  height: 600px;
+  background-image: url(images/banner2.jpg);
+  margin-bottom: 50px;
+  position: relative;
+  }
+  
+  .main-image-info {
+    padding: 25px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    border-radius: 10px;
+   
+  }
 
-.jumbo{
-    /* ALGUNS EXEMPLOS  */
-    /* https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
-    background-image: url(https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: cover;
-    height: 640px;
-    text-align: left;
-    justify-content: center;
-    
-}
+  .main-image-info h2, h3 {
+    /* color: #5C70F0; */
+    color: white;
+  } 
+
+  .main-image-info p{
+    color: #92E7FA;
+
+  }
 
 `;
 
