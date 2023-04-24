@@ -2,12 +2,13 @@ import React from 'react';
 import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import JumbotronTeste from '@/components/jumbotron/teste';
+import Jumbotron from '@/components/jumbotron/jumbotron';
 import Card from '@/components/card/Cards';
-import { Container, Spacer } from '@nextui-org/react';
+import { Spacer } from '@nextui-org/react';
+import Carousel from '@/components/carousel/carousel';
 
 const Home: NextPage = () => (
-  <Container>
+  <div>
     <Head>
       <title>Zeta | Tecnologia e Inovação</title>
       <meta charSet='utf-8' />
@@ -21,16 +22,16 @@ const Home: NextPage = () => (
       <meta property='og:title' content='Zeta | Tecnologia e Inovação' />
       <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
       <link rel='icon' href='/images/logo.svg' />
-      <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet' />
-
     </Head>
+
     <Header />
-    <Spacer y={1} />
-    <JumbotronTeste />
     <Spacer y={2} />
+    <Jumbotron />
+    <Spacer y={4} />
     <Card />
-    <Spacer y={3} />
-  </Container>
+    <Spacer y={4} />
+    <Carousel />
+  </div>
 );
 
 export default Home;
