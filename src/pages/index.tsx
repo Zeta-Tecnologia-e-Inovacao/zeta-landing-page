@@ -5,7 +5,6 @@ import Head from 'next/head';
 import Jumbotron from '@/components/jumbotron/jumbotron';
 import Card from '@/components/card/Cards';
 import { Spacer } from '@nextui-org/react';
-import Carousel from '@/components/carousel/carousel';
 
 const Home: NextPage = () => (
   <div>
@@ -30,7 +29,6 @@ const Home: NextPage = () => (
     <Spacer y={4} />
     <Card />
     <Spacer y={4} />
-    <Carousel />
   </div>
 );
 
