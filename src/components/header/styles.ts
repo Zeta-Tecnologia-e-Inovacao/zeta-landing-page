@@ -6,9 +6,43 @@ export const MenuHeader = styled.div`
 /* font-family: 'Lato', sans-serif;
 font-family: 'Poppins', sans-serif; */
 ////////////////// HEADER ///////////////
+a, i{
+  transition: .5s;
+}
 
-.li {
+#header {
+  background-color: #000000;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #CCC;
+}
 
+#header h4{
+  margin-bottom: 0;
+  color: #FFF;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 240px;
+  margin-right: 15px;
+}
+
+
+/* Navbar */
+
+#navbar a:hover{
+  color: #054;
+}
+
+.navbar-nav a {
+  color: #000!important;
+  margin: 0 8px;
+  font-size: 18px;
 }
 
 .menu{
@@ -38,6 +72,7 @@ a, span{
   position: relative;
   display: inline-block;
 }
+
 .nav-link::before {
   content: '';
   position: absolute;
@@ -45,7 +80,7 @@ a, span{
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #FFF;
+  background-color: #5C70F0;
   border-radius: 4px;
   scale: 0 1;
   transform-origin: right;

@@ -1,44 +1,53 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { Image, Link } from '@nextui-org/react';
+import Script from 'next/script';
 import * as S from './styles';
 
 const Header: NextPage = () => (
 
   <S.MenuHeader>
-    <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-      <div className='container text-transition-slider-navbar'>
-        <Image src='/images/Zeta-Logo.png' className='navbar-brand logo' />
-        <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#collapsibleNavbar'>
-          <span className='navbar-toggler-icon' />
+    <Script
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js'
+      integrity='sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe'
+      crossOrigin='anonymous'
+    />
+    <div className='container-fluid'>
+      <header className='row' id='header'>
+        <div id='logo-container'>
+          <Image src='images/Zeta-Logo.png' alt='' id='logo' />
+        </div>
+        <h4><i>Tecnologia e Inovação</i></h4>
+      </header>
+      <nav className='navbar navbar-expand-lg'>
+        <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+          <i className='navbar-toggler-icon' />
         </button>
-
-        <div className='collapse navbar-collapse' id='collapsibleNavbar'>
-          <ul className='navbar-nav ms-auto '>
-
+        <div className='collapse navbar-collapse' id='navbarNavDropdown'>
+          <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
-              <Link className='nav-link' href='#solucoes'>Soluções</Link>
+              <a className='nav-link active' aria-current='page' href='#home'>Home</a>
             </li>
-
             <li className='nav-item'>
-              <Link className='nav-link' href='#services'>Serviços</Link>
+              <a className='nav-link' href='#soluctions'>Soluções</a>
             </li>
-
             <li className='nav-item'>
-              <Link className='nav-link' href='#contact'>Contato</Link>
+              <a className='nav-link' href='#services'>Serviços</a>
             </li>
             <li className='nav-item dropdown'>
-              <span className='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown'>Sobre nós</span>
+              <a className='nav-link dropdown-toggle' href='#d' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                Sobre nós
+              </a>
               <ul className='dropdown-menu'>
-                <li><Link href='/quem-somos' className='dropdown-item dropdown-name'>Quem Somos</Link></li>
-                <li><Link href='/missao-valores' className='dropdown-item dropdown-name'>Missão e Valores</Link></li>
-                <li><Link href='#teste' className='dropdown-item dropdown-name'>A third link</Link></li>
+                <li><Link className='dropdown-item' href='/quem-somos'>Quem somos</Link></li>
+                <li><Link className='dropdown-item' href='/missao-valores'>Missão Valores</Link></li>
               </ul>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+
   </S.MenuHeader>
 
 );
