@@ -10,9 +10,13 @@ const Jumbotron: NextPage = () => (
       <div className='main-image center-image'>
         <div className='main-image-info'>
           <h2>
-            Mantenha-se à frente da concorrência com nossas <br />
-            soluções de tecnologia inteligente.</h2>
-          <h3>Da eletrônica embarcada ao design da Web, temos tudo.</h3>
+            Mantenha-se à frente da concorrência com nossas
+            soluções de tecnologia inteligente.
+          </h2>
+          <h3>
+            Descubra como as soluções tecnológicas inteligentes podem
+            alavancar seus negócios e maximizar lucros.
+          </h3>
           <Link href='/quem-somos' className='btn1'>Saber mais</Link>
         </div>
       </div>
