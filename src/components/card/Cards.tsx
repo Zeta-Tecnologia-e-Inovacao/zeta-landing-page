@@ -3,7 +3,8 @@ import { Grid, Container } from '@nextui-org/react';
 import type { NextPage } from 'next';
 import CardWeb from './CardControll/CardWeb';
 import CardIot from './CardControll/CardIot';
-import CardTeste from './CardControll/CardEmbarcados';
+import CardEmbarcado from './CardControll/CardEmbarcados';
+import CardTeste from './CardControll/CardTeste';
 
 const CardPage: NextPage = () => (
 
@@ -32,6 +33,14 @@ const CardPage: NextPage = () => (
       >
         <CardWeb />
       </Grid>
+
+      <Grid
+        xs={12}
+        sm={4}
+      >
+        <CardEmbarcado />
+      </Grid>
+
     </Grid.Container>
   </Container>
 );
