@@ -28,8 +28,8 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "*/*/*.ts",
+    "*/*/*.tsx",
     "src/components/jumbotron/jumbotron.tsx",
     "src/components/card/Cards.tsx",
     "src/components/header/Navbar.tsx",

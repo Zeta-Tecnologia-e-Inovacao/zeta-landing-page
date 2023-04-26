@@ -1,11 +1,11 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { Image } from '@nextui-org/react';
-import * as S from './styles';
+import { Card } from './styles';
 
 const CardPage: NextPage = () => (
 
-  <S.Card>
+  <Card>
     <div className='container py-1' id='services'>
       <h1 className='text-center teste'>Soluções</h1>
 
@@ -52,8 +52,7 @@ const CardPage: NextPage = () => (
 
       </div>
     </div>
-
-  </S.Card>
+  </Card>
 
 );
 
