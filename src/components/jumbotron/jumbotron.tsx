@@ -13,7 +13,7 @@ const Jumbotron: NextPage = () => (
             Mantenha-se à frente da concorrência com nossas
             soluções de tecnologia inteligente.
           </h2>
-          <h3>
+          <h3 className='mb-3'>
             Descubra como as soluções tecnológicas inteligentes podem
             alavancar seus negócios e maximizar lucros!
           </h3>

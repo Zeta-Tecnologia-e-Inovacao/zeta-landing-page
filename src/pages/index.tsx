@@ -3,8 +3,10 @@ import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Jumbotron from '@/components/jumbotron/jumbotron';
-import Card from '@/components/card/Cards';
+import Card from '@/components/Card/Cards';
 import { Spacer } from '@nextui-org/react';
+import Parcerias from '@/components/Parceiros/parcerias';
+import About from '@/components/about/about';
 
 const Home: NextPage = () => (
   <div>
@@ -24,11 +26,15 @@ const Home: NextPage = () => (
     </Head>
 
     <Header />
-    <Spacer y={2} />
+    <Spacer y={1} />
     <Jumbotron />
-    <Spacer y={4} />
+    <Spacer y={1} />
     <Card />
-    <Spacer y={4} />
+    <Spacer y={1} />
+    <About />
+    <Spacer y={1} />
+    <Parcerias />
+    <Spacer y={1} />
   </div>
 );
 
