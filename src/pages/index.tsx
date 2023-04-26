@@ -3,8 +3,8 @@ import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
 import { Spacer } from '@nextui-org/react';
 import Head from 'next/head';
-import Jumbotron from '@/components/Jumbotron/jumbotron';
-import Card from '@/components/Card/Cards';
+import Jumbotron from '@/components/jumbotron/jumbotron';
+import Card from '@/components/card/Cards';
 import About from '@/components/Sobre/about';
 import Parcerias from '@/components/Parceiros/parcerias';
 
