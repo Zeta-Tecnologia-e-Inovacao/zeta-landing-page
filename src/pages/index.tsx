@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Jumbotron from '@/components/jumbotron/jumbotron';
-import Card from '@/components/Card/Cards';
 import { Spacer } from '@nextui-org/react';
+import Head from 'next/head';
+import Jumbotron from '@/components/Jumbotron/jumbotron';
+import Card from '@/components/Card/Cards';
 import Parcerias from '@/components/Parceiros/parcerias';
-import About from '@/components/about/about';
+import About from '@/components/Sobre/about';
 
 const Home: NextPage = () => (
   <div>
