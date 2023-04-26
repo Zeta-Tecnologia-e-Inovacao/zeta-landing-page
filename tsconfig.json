@@ -31,9 +31,10 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/Jumbotron/jumbotron.tsx",
-    "src/components/Card/infoCard.tsx",
     "src/components/Card/Cards.tsx",
-    "src/components/header/Navbar.tsx"
+    "src/components/header/Navbar.tsx",
+    "src/components/Parceiros/parcerias.tsx",
+    "src/components/Sobre/about.tsx",
   ],
   "exclude": [
     "node_modules"
