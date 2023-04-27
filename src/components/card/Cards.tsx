@@ -1,7 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { Image } from '@nextui-org/react';
-import { Card } from './styles';
+import { Card } from './style';
 
 const CardPage: NextPage = () => (
 
