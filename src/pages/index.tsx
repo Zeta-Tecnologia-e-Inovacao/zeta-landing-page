@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
+import { Spacer } from '@nextui-org/react';
 import Head from 'next/head';
-import Jumbotron from '@/components/jumbotron/Jumbotron';
+import Jumbotron from '@/components/jumbotron/jumbotron';
 import Card from '@/components/card/Cards';
-import { Container, Spacer } from '@nextui-org/react';
+import About from '@/components/Sobre/about';
+import Parcerias from '@/components/Parceiros/parcerias';
 
 const Home: NextPage = () => (
-  <Container>
+  <div>
     <Head>
       <title>Zeta | Tecnologia e Inovação</title>
       <meta charSet='utf-8' />
@@ -22,13 +24,18 @@ const Home: NextPage = () => (
       <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
       <link rel='icon' href='/images/logo.svg' />
     </Head>
+
     <Header />
     <Spacer y={1} />
     <Jumbotron />
-    <Spacer y={2} />
+    <Spacer y={1} />
     <Card />
-    <Spacer y={3} />
-  </Container>
+    <Spacer y={1} />
+    <About />
+    <Spacer y={1} />
+    <Parcerias />
+    <Spacer y={1} />
+  </div>
 );
 
 export default Home;
