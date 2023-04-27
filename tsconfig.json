@@ -28,9 +28,17 @@
   },
   "include": [
     "next-env.d.ts",
+    "src",
     "**/*.ts",
-    "**/*.tsx"
-, "src/components/jumbotron/Jumbotron.tsx", "src/components/card/infoCard.tsx", "src/components/card/Cards.tsx", "src/components/header/Navbar.tsx"  ],
+    "**/*.tsx",
+    "src/components/jumbotron/jumbotron.tsx",
+    "src/components/card/Cards.tsx",
+    "src/components/header/Navbar.tsx",
+    "src/components/Parceiros/parcerias.tsx",
+    "src/components/Sobre/about.tsx",
+    "src/pages/missao-valores/index.tsx",
+    "src/pages/quem-somos/index.tsx",
+  ],
   "exclude": [
     "node_modules"
   ]

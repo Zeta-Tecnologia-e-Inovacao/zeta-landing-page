@@ -29,10 +29,10 @@ const Header: NextPage = () => (
               <a className='nav-link active' aria-current='page' href='#home'>Home</a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#soluctions'>Soluções</a>
+              <a className='nav-link' href='#soluction'>Soluções</a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#services'>Serviços</a>
+              <a className='nav-link' href='#parcerias'>Parcerias</a>
             </li>
             <li className='nav-item dropdown'>
               <a className='nav-link dropdown-toggle' href='#d' role='button' data-bs-toggle='dropdown' aria-expanded='false'>

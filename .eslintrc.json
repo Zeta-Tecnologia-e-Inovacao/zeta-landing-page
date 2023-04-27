@@ -24,7 +24,8 @@
       "project": "./tsconfig.json",
       "sourceType": "module",
       "ecmaFeatures": {
-        "jsx": true
+        "jsx": true,
+        "ts": true
       }
     },
     "settings": {
@@ -33,6 +34,14 @@
       }
     },
     "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "ts": "never",
+          "tsx": "never"
+        }
+     ],
     "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
     "react/jsx-props-no-spreading": "off",
     "jsx-quotes": ["error", "prefer-single"],

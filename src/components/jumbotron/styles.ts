@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const JumbotronConfig = styled.div`
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;500;600&display=swap'); 
 
 /* font-family: 'Lato', sans-serif;
 font-family: 'Poppins', sans-serif; */
@@ -19,6 +19,10 @@ font-family: 'Poppins', sans-serif; */
  * animation tracking-in-expand-fwd
  * ----------------------------------------
  */
+
+*{
+  font-family: 'Roboto Slab', sans-serif;
+}
 
 .tracking-in-expand-fwd {
     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -39,6 +43,43 @@ font-family: 'Poppins', sans-serif; */
     transform: translateZ(0);
     opacity: 1;
   }
+}
+
+/* ---------------- Botão do Jumbotron  */
+.btn1{
+  margin-top: 5px;
+  padding: 17px 40px;
+  border-radius: 40px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease;
+  border-radius: 1.75rem;
+  color: #f7f7f7;
+  background-color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1.0px;
+  font-size: 15px;
+  transition: all .6s ease;
+}
+.btn1:hover {
+  letter-spacing: 3px;
+  background-color: hsl(220deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(200 260 290) 0px 7px 29px 0px;
+}
+.btn1:active{
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
 }
 @keyframes tracking-in-expand-fwd {
   0% {
@@ -66,7 +107,7 @@ font-family: 'Poppins', sans-serif; */
   }
   
   .main-image-info {
-    padding: 25px;
+    padding: 40px;
     position: absolute;
     left: 25px;
     bottom: 25px;
