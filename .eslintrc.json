@@ -24,7 +24,8 @@
       "project": "./tsconfig.json",
       "sourceType": "module",
       "ecmaFeatures": {
-        "jsx": true
+        "jsx": true,
+        "ts": true
       }
     },
     "settings": {

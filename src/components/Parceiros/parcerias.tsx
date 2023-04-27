@@ -6,7 +6,7 @@ import * as S from './styles';
 const Parcerias: NextPage = () => (
   <S.CssParceria>
     <div className='container py-5' id=''>
-      <h1 className='text-center'>Parceiros</h1>
+      <h1 className='text-center'>Parcerias</h1>
       <section className='feature-area-two rel z-1'>
         <div className='container'>
           <div className='row justify-content-center'>
