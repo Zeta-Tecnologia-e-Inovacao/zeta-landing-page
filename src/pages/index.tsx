@@ -7,6 +7,8 @@ import Jumbotron from '@/components/jumbotron/jumbotron';
 import Card from '@/components/card/Cards';
 import About from '@/components/Sobre/about';
 import Parcerias from '@/components/Parceiros/parcerias';
+import Form from '@/components/FormContact';
+import Footer from '@/components/Footer';
 
 const Home: NextPage = () => (
   <div>
@@ -24,7 +26,6 @@ const Home: NextPage = () => (
       <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
       <link rel='icon' href='/images/logo.svg' />
     </Head>
-
     <Header />
     <Spacer y={1} />
     <Jumbotron />
@@ -34,7 +35,10 @@ const Home: NextPage = () => (
     <About />
     <Spacer y={1} />
     <Parcerias />
-    <Spacer y={1} />
+    <Spacer y={2} />
+    <Form />
+    <Spacer y={4} />
+    <Footer />
   </div>
 );
 
