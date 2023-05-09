@@ -106,7 +106,7 @@ const Form = () => {
                     </div>
                     <div className='content'>
                       <span>Email</span>
-                      <h5><a href='mailto.com'>contato@zetatecnologia.com</a></h5>
+                      <h5><a href='mailto.com'>zeta.technologia@gmail.com</a></h5>
                     </div>
                   </div>
 
@@ -116,7 +116,7 @@ const Form = () => {
                     </div>
                     <div className='content'>
                       <span>Contato</span>
-                      <h5>+55(12) 99158-1682</h5>
+                      <h5>+55(12) 99606-2530</h5>
                       <pre>{output}</pre>
                     </div>
                   </div>

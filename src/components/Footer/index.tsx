@@ -36,8 +36,8 @@ const Footer: NextPage = () => (
                   <p className='secondary-color'>Brasil - São Paulo</p>
 
                   <h4>Nosso Contato</h4>
-                  <p className='secondary-color'>+55(12) 99158-1682</p>
-                  <p className='secondary-color'>contato@zetatecnologia.com</p>
+                  <p className='secondary-color'>+55(12) 99606-2530</p>
+                  <p className='secondary-color'>zeta.technologia@gmail.com</p>
                 </div>
                 <div className='col-12 col-md-4' id='links-container'>
                   <div className='row'>
