@@ -15,7 +15,8 @@ const Jumbotron: NextPage = () => (
           </h2>
           <h3 className='mb-3'>
             Descubra como as soluções tecnológicas inteligentes podem
-            alavancar seus negócios e maximizar lucros!
+            alavancar seus negóci
+            os e maximizar lucros!
           </h3>
           <Link href='/quem-somos' className='btn1'>Saber mais</Link>
         </div>

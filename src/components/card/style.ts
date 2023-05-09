@@ -4,9 +4,9 @@ export const Card = styled.div`
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;500;600&display=swap'); 
 
-*{
+/* *{
     font-family: 'Roboto Slab', sans-serif;
-}
+} */
 
 .card{
     border-radius: 30px;
@@ -29,11 +29,12 @@ export const Card = styled.div`
 
 h3, h4{
     color: rgb(0, 150, 180);
-    font-weight: bold
+    font-weight: 700
 }
 
 p{
     font-size: 16px;
+    font-weight: 400;
 }
 
 .card-img-top {
