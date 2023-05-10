@@ -1,23 +1,36 @@
 import { AwsClient } from 'aws4fetch';
 import { useState } from 'react';
-import { useForm } from 'react-hook-form';
 import * as S from './styles';
 
 const Form = () => {
-  const [output, setOutput] = useState('');
-  const { register, handleSubmit } = useForm();
-  function createUser(data: any) {
-    setOutput(JSON.stringify(data, null, 2));
-  }
-  const dados = output;
+  const [outputName, setOutputName] = useState('');
+  const [outputNumber, setOutputNumber] = useState('');
+
+  // const [userInfo, setUserInfo] = useState({
+  //   name: '',
+  //   whatsapp: '',
+  // });
+
+  // const handleChange = ({ target: { name, value } }) => {
+  //   console.log(name);
+  //   setUserInfo({
+  //     ...userInfo,
+  //     [name]: value,
+  //   });
+  // };
+
   function FormRequisicao() {
     async function fetchData() {
       const options = {
         method: 'POST',
+        Origin: 'http://localhost:3000/',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: dados,
+        body: JSON.stringify({
+          name: outputName,
+          whatsapp: outputNumber,
+        }),
       };
       const aws = new AwsClient({
         accessKeyId: 'AKIA36OS22WVCS3CK5GZ',
@@ -30,6 +43,7 @@ const Form = () => {
     }
     fetchData();
   }
+
   // ==============================
 
   return (
@@ -42,7 +56,7 @@ const Form = () => {
                 <div className='section-title mb-30'>
                   <h3>Entre em contato conosco</h3>
                 </div>
-                <form onSubmit={handleSubmit(createUser)} action='#teste' name='contact-form' className='form-style-one' method='post'>
+                <form action='#teste' name='contact-form' className='form-style-one' method='post'>
                   <div className='row'>
                     <div className='col-md-12'>
                       <div className='form-group'>
@@ -51,7 +65,8 @@ const Form = () => {
                           id='name'
                           className='form-control'
                           placeholder='Nome completo'
-                          {...register('name')}
+                          onChange={(e) => setOutputName(e.target.value)}
+                          // onChange={handleChange}
                           required
                         />
                       </div>
@@ -65,7 +80,9 @@ const Form = () => {
                           className='form-control'
                           placeholder='Telefone celular'
                           maxLength={11}
-                          {...register('whatsapp')}
+                          // value={userInfo.whatsapp}
+                          onChange={(e) => setOutputNumber(e.target.value)}
+                          // onChange={handleChange}
                           required
                         />
                       </div>
@@ -73,7 +90,7 @@ const Form = () => {
 
                     <div className='col-xl-12'>
                       <div className='form-group mb-0'>
-                        <button type='submit' onClick={FormRequisicao} className='theme-btn style-two-mt-15 w-100'>Enviar</button>
+                        <button onClick={FormRequisicao} type='submit' className='theme-btn style-two-mt-15 w-100'>Enviar</button>
                       </div>
                     </div>
                   </div>
