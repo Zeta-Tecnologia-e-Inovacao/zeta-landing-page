@@ -9,7 +9,6 @@ const Form = () => {
   function createUser(data: any) {
     setOutput(JSON.stringify(data, null, 2));
   }
-
   const dados = output;
   function FormRequisicao() {
     async function fetchData() {
