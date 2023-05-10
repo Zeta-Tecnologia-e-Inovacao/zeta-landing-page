@@ -6,19 +6,6 @@ const Form = () => {
   const [outputName, setOutputName] = useState('');
   const [outputNumber, setOutputNumber] = useState('');
 
-  // const [userInfo, setUserInfo] = useState({
-  //   name: '',
-  //   whatsapp: '',
-  // });
-
-  // const handleChange = ({ target: { name, value } }) => {
-  //   console.log(name);
-  //   setUserInfo({
-  //     ...userInfo,
-  //     [name]: value,
-  //   });
-  // };
-
   function FormRequisicao() {
     async function fetchData() {
       const options = {
