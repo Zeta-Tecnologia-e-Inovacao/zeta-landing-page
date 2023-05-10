@@ -1,4 +1,4 @@
-// import { AwsClient } from 'aws4fetch';
+import { AwsClient } from 'aws4fetch';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as S from './styles';
@@ -10,29 +10,27 @@ const Form = () => {
     setOutput(JSON.stringify(data, null, 2));
   }
 
-  // function FormRequisicao() {
-  //   async function fetchData() {
-  //     const options = {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({
-  //         name: 'Gabriel',
-  //         whatsapp: '12974050258',
-  //       }),
-  //     };
-  //     const aws = new AwsClient({
-  //       accessKeyId: 'AKIA36OS22WVCS3CK5GZ',
-  //       secretAccessKey: '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',
-  //       service: 'execute-api',
-  //       region: 'sa-east-1',
-  //     });
-  //     const url = 'https://5728p2qs9c.execute-api.sa-east-1.amazonaws.com/dev/leads';
-  //     await aws.fetch(url, options);
-  //   }
-  //   fetchData();
-  // }
+  const dados = output;
+  function FormRequisicao() {
+    async function fetchData() {
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: dados,
+      };
+      const aws = new AwsClient({
+        accessKeyId: 'AKIA36OS22WVCS3CK5GZ',
+        secretAccessKey: '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',
+        service: 'execute-api',
+        region: 'sa-east-1',
+      });
+      const url = 'https://5728p2qs9c.execute-api.sa-east-1.amazonaws.com/dev/leads';
+      await aws.fetch(url, options);
+    }
+    fetchData();
+  }
   // ==============================
 
   return (
@@ -76,7 +74,7 @@ const Form = () => {
 
                     <div className='col-xl-12'>
                       <div className='form-group mb-0'>
-                        <button type='submit' className='theme-btn style-two-mt-15 w-100'>Enviar</button>
+                        <button type='submit' onClick={FormRequisicao} className='theme-btn style-two-mt-15 w-100'>Enviar</button>
                       </div>
                     </div>
                   </div>
@@ -117,7 +115,6 @@ const Form = () => {
                     <div className='content'>
                       <span>Contato</span>
                       <h5>+55(12) 99606-2530</h5>
-                      <pre>{output}</pre>
                     </div>
                   </div>
                 </div>
