@@ -13,7 +13,7 @@ const About: NextPage = () => (
         <div className='row align-items-center gap-100'>
           <div className='col-lg-6'>
             <div className='about-three-image rel z-1 mb-30 rmb-65 wow fadeInRight delay-0-2s animated'>
-              <Image src='/images/about-1.png' alt='About' id='about' width={500} height={500} />
+              <Image src='images/about-1.png' alt='About' id='about' width={500} height={500} />
             </div>
           </div>
           <div className='col-lg-6'>

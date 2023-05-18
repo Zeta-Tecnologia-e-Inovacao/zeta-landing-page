@@ -22,9 +22,12 @@
     "incremental": true,
     "paths": {
       "@/*": [
-        "./src/*"
+        "./src/*",
       ]
-    }
+    },
+    "typeRoots": [
+      "node_modules/@types",
+    ],
   },
   "include": [
     "next-env.d.ts",
