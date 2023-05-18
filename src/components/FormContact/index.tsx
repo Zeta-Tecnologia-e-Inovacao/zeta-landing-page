@@ -48,7 +48,7 @@ const Form = () => {
                 <div className='section-title mb-30'>
                   <h3>Entre em contato conosco</h3>
                 </div>
-                <form action='#teste' name='contact-form' className='form-style-one' method='post'>
+                <form name='contact-form' className='form-style-one' method='POST'>
                   <div className='row'>
                     <div className='col-md-12'>
                       <div className='form-group'>
@@ -63,7 +63,6 @@ const Form = () => {
                         />
                       </div>
                     </div>
-
                     <div className='col-md-12'>
                       <div className='form-group'>
                         <input
@@ -79,7 +78,6 @@ const Form = () => {
                         />
                       </div>
                     </div>
-
                     <div className='col-xl-12'>
                       <div className='form-group mb-0'>
                         <button onClick={FormRequisicao} type='submit' className='theme-btn style-two-mt-15 w-100'>Enviar</button>
@@ -105,7 +103,6 @@ const Form = () => {
                       <h5>Parque Tecnológico, São José dos Campos - SP Brasil</h5>
                     </div>
                   </div>
-
                   <div className='contact-info-item'>
                     <div className='icon'>
                       <i className='bi bi-envelope-at' />
@@ -115,16 +112,13 @@ const Form = () => {
                       <h5><a href='mailto.com'>zeta.technologia@gmail.com</a></h5>
                     </div>
                   </div>
-
                   <div className='contact-info-item'>
                     <div className='icon'>
                       <i className='bi bi-telephone' />
                     </div>
                     <div className='content'>
                       <span>Contato</span>
-                      <h5>
-                        +55(12) 99606-2530
-                      </h5>
+                      <h5>+55(12) 99606-2530</h5>
                     </div>
                   </div>
                 </div>

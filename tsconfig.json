@@ -40,8 +40,8 @@
     "src/components/Parceiros/parcerias.tsx",
     "src/components/Sobre/about.tsx",
     "src/pages/missao-valores/index.tsx",
-    "src/pages/quem-somos/index.tsx"
-, "src/styles/wow.min.js"  ],
+    "src/pages/quem-somos/index.tsx",
+  ],
   "exclude": [
     "node_modules"
   ]
