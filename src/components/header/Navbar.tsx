@@ -1,17 +1,11 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { Image } from '@nextui-org/react';
-import Script from 'next/script';
 import * as S from './styles';
 
 const Header: NextPage = () => (
 
   <S.MenuHeader>
-    <Script
-      src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js'
-      integrity='sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe'
-      crossOrigin='anonymous'
-    />
     <div className='container-fluid '>
       <header className='row' id='header'>
         <div className='text-transition-slider-logo'>

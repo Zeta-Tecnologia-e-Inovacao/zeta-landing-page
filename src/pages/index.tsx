@@ -40,7 +40,6 @@ const Home: NextPage = () => (
     <Spacer y={4} />
     <Footer />
   </div>
-
 );
 
 export default Home;
