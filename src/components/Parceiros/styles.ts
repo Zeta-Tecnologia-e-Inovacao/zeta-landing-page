@@ -24,9 +24,8 @@ font-family: 'Poppins', sans-serif; */
     padding: 20px;
 }
 
-.icon{
-    cursor: pointer;
-}
+/* .icon{
+} */
 
 .icon:hover{
     background-color: #fff;
@@ -37,8 +36,6 @@ font-family: 'Poppins', sans-serif; */
     line-height: 1;
     font-size: 65px;
     transition: 0.5s;
-    
-
 }
 
 p{

@@ -22,9 +22,12 @@
     "incremental": true,
     "paths": {
       "@/*": [
-        "./src/*"
+        "./src/*",
       ]
-    }
+    },
+    "typeRoots": [
+      "node_modules/@types",
+    ],
   },
   "include": [
     "next-env.d.ts",
@@ -37,8 +40,8 @@
     "src/components/Parceiros/parcerias.tsx",
     "src/components/Sobre/about.tsx",
     "src/pages/missao-valores/index.tsx",
-    "src/pages/quem-somos/index.tsx",
-  ],
+    "src/pages/quem-somos/index.tsx"
+, "src/styles/wow.min.js"  ],
   "exclude": [
     "node_modules"
   ]
