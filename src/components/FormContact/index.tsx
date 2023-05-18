@@ -6,11 +6,17 @@ const Form = () => {
   const [outputName, setOutputName] = useState('');
   const [outputNumber, setOutputNumber] = useState('');
 
+  const accessKeyId = process.env.NEXT_PUBLIC_AWS_ACCESS_KEY ?? '';
+  const secretAccessKey = process.env.NEXT_PUBLIC_AWS_SECRET_KEY ?? '';
+  const url = process.env.NEXT_PUBLIC_AWS_URL ?? '';
+  const region = process.env.NEXT_PUBLIC_AWS_REGION ?? '';
+  const Origin = process.env.NEXT_PUBLIC_AWS_ORIGIN;
+
   function FormRequisicao() {
     async function fetchData() {
       const options = {
         method: 'POST',
-        Origin: 'http://localhost:3000/',
+        Origin,
         headers: {
           'Content-Type': 'application/json',
         },
@@ -20,12 +26,11 @@ const Form = () => {
         }),
       };
       const aws = new AwsClient({
-        accessKeyId: 'AKIA36OS22WVCS3CK5GZ',
-        secretAccessKey: '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',
+        accessKeyId,
+        secretAccessKey,
         service: 'execute-api',
-        region: 'sa-east-1',
+        region,
       });
-      const url = 'https://5728p2qs9c.execute-api.sa-east-1.amazonaws.com/dev/leads';
       await aws.fetch(url, options);
     }
     fetchData();
@@ -117,7 +122,9 @@ const Form = () => {
                     </div>
                     <div className='content'>
                       <span>Contato</span>
-                      <h5>+55(12) 99606-2530</h5>
+                      <h5>
+                        +55(12) 99606-2530
+                      </h5>
                     </div>
                   </div>
                 </div>
