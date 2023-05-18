@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
 import * as S from './styles';
 
@@ -34,7 +33,6 @@ const Footer: NextPage = () => (
                   <h4>Nossa Localização</h4>
                   {/* ====== UTILIZEI MEIOS DE CONTATO FICTICIOS ==== */}
                   <p className='secondary-color'>Brasil - São Paulo</p>
-
                   <h4>Nosso Contato</h4>
                   <p className='secondary-color'>+55(12) 99606-2530</p>
                   <p className='secondary-color'>zeta.technologia@gmail.com</p>
@@ -49,16 +47,6 @@ const Footer: NextPage = () => (
                         <li><a href='#parcerias' className='secondary-color'>Parcerias</a></li>
                         <li><a href='#contact' className='secondary-color'>Contato</a></li>
                         <li><a href='#about' className='secondary-color'>Sobre nós</a></li>
-                      </ul>
-                    </div>
-                    <div className='col-6'>
-                      <ul className='list-unstyled'>
-                        <li>
-                          <Link href='/quem-somos' className='secondary-color'>Quem Somos</Link>
-                        </li>
-                        <li>
-                          <Link href='/missao-valores' className='secondary-color'>Missão e Valores</Link>
-                        </li>
                       </ul>
                     </div>
                   </div>

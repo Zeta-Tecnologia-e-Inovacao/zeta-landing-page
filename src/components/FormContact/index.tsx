@@ -6,17 +6,11 @@ const Form = () => {
   const [outputName, setOutputName] = useState('');
   const [outputNumber, setOutputNumber] = useState('');
 
-  const accessKeyId = process.env.NEXT_PUBLIC_AWS_ACCESS_KEY ?? '';
-  const secretAccessKey = process.env.NEXT_PUBLIC_AWS_SECRET_KEY ?? '';
-  const url = process.env.NEXT_PUBLIC_AWS_URL ?? '';
-  const region = process.env.NEXT_PUBLIC_AWS_REGION ?? '';
-  const Origin = process.env.NEXT_PUBLIC_AWS_ORIGIN;
-
   function FormRequisicao() {
     async function fetchData() {
       const options = {
         method: 'POST',
-        Origin,
+        Origin: 'http://localhost:3000/',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -26,11 +20,12 @@ const Form = () => {
         }),
       };
       const aws = new AwsClient({
-        accessKeyId,
-        secretAccessKey,
+        accessKeyId: 'AKIA36OS22WVCS3CK5GZ',
+        secretAccessKey: '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',
         service: 'execute-api',
-        region,
+        region: 'sa-east-1',
       });
+      const url = 'https://5728p2qs9c.execute-api.sa-east-1.amazonaws.com/dev/leads';
       await aws.fetch(url, options);
     }
     fetchData();
@@ -48,7 +43,7 @@ const Form = () => {
                 <div className='section-title mb-30'>
                   <h3>Entre em contato conosco</h3>
                 </div>
-                <form action='#teste' name='contact-form' className='form-style-one' method='post'>
+                <form name='contact-form' className='form-style-one' method='post'>
                   <div className='row'>
                     <div className='col-md-12'>
                       <div className='form-group'>
@@ -63,7 +58,6 @@ const Form = () => {
                         />
                       </div>
                     </div>
-
                     <div className='col-md-12'>
                       <div className='form-group'>
                         <input
@@ -79,7 +73,6 @@ const Form = () => {
                         />
                       </div>
                     </div>
-
                     <div className='col-xl-12'>
                       <div className='form-group mb-0'>
                         <button onClick={FormRequisicao} type='submit' className='theme-btn style-two-mt-15 w-100'>Enviar</button>
@@ -105,7 +98,6 @@ const Form = () => {
                       <h5>Parque Tecnológico, São José dos Campos - SP Brasil</h5>
                     </div>
                   </div>
-
                   <div className='contact-info-item'>
                     <div className='icon'>
                       <i className='bi bi-envelope-at' />
@@ -115,16 +107,13 @@ const Form = () => {
                       <h5><a href='mailto.com'>zeta.technologia@gmail.com</a></h5>
                     </div>
                   </div>
-
                   <div className='contact-info-item'>
                     <div className='icon'>
                       <i className='bi bi-telephone' />
                     </div>
                     <div className='content'>
                       <span>Contato</span>
-                      <h5>
-                        +55(12) 99606-2530
-                      </h5>
+                      <h5>+55(12) 99606-2530</h5>
                     </div>
                   </div>
                 </div>

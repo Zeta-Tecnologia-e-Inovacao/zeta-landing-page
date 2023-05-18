@@ -45,7 +45,7 @@ const CardPage: NextPage = () => (
         </div>
         <div className='col'>
           <div className='card'>
-            <Image src='images/cards/Cloud.jpg' className='card-img-top' alt='...' id='Card' />
+            <Image src='/images/cards/Cloud.jpg' className='card-img-top' alt='...' id='Card' />
             <div className='card-body'>
               <h4 className='card-title'>Cloud Computing</h4>
               <p className='card-text'>
