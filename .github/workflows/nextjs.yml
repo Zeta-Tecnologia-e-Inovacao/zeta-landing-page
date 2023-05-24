@@ -25,6 +25,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test-environment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use environment variable
+        run: echo ${{ secrets.NEXT_PUBLIC_AWS_ORIGIN }}
+        
   # Build job
   build:
     runs-on: ubuntu-latest
