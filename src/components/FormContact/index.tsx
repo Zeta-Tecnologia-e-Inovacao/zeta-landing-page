@@ -41,7 +41,6 @@ const Form = () => {
       console.log('teste - env-OPTIONS', aws);
     }
     fetchData();
-    window.location.reload();
   }
 
   // ==============================
