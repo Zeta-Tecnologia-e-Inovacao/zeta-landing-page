@@ -1,5 +1,6 @@
 import { AwsClient } from 'aws4fetch';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import * as S from './styles';
 
 const Form = () => {
@@ -41,6 +42,10 @@ const Form = () => {
       console.log('teste - env-OPTIONS', aws);
     }
     fetchData();
+
+    toast.success('Success Notification !', {
+      position: toast.POSITION.TOP_RIGHT,
+    });
     window.location.reload();
   }
 
@@ -86,6 +91,7 @@ const Form = () => {
                     <div className='col-xl-12'>
                       <div className='form-group mb-0'>
                         <button type='button' onClick={FormRequisicao} className='theme-btn style-two-mt-15 w-100'>Enviar</button>
+                        <ToastContainer />
                       </div>
                     </div>
                   </div>
