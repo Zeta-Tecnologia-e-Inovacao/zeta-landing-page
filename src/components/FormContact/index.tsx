@@ -48,7 +48,7 @@ const Form = () => {
                 <div className='section-title mb-30'>
                   <h3>Entre em contato conosco</h3>
                 </div>
-                <form name='contact-form' className='form-style-one' method='POST'>
+                <form action='/' name='contact-form' className='form-style-one' method='POST'>
                   <div className='row'>
                     <div className='col-md-12'>
                       <div className='form-group'>
@@ -58,7 +58,6 @@ const Form = () => {
                           className='form-control'
                           placeholder='Nome completo'
                           onChange={(e) => setOutputName(e.target.value)}
-                          // onChange={handleChange}
                           required
                         />
                       </div>
@@ -71,9 +70,7 @@ const Form = () => {
                           className='form-control'
                           placeholder='Telefone celular'
                           maxLength={11}
-                          // value={userInfo.whatsapp}
                           onChange={(e) => setOutputNumber(e.target.value)}
-                          // onChange={handleChange}
                           required
                         />
                       </div>
