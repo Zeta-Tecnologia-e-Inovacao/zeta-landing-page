@@ -11,6 +11,12 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  
+env:
+  NEXT_PUBLIC_AWS_ACCESS_KEY: ${{ secrets.NEXT_PUBLIC_AWS_ACCESS_KEY }}
+  NEXT_PUBLIC_AWS_ORIGIN: ${{ secrets.NEXT_PUBLIC_AWS_ORIGIN }}
+  NEXT_PUBLIC_AWS_SECRET_KEY: ${{ secrets.NEXT_PUBLIC_AWS_SECRET_KEY }}
+  NEXT_PUBLIC_AWS_URL: ${{ secrets.NEXT_PUBLIC_AWS_URL }}
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -29,7 +35,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use environment variable
-        run: echo ${{ secrets.NEXT_PUBLIC_AWS_ORIGIN }}
+        run: 
+          echo $ {{ secrets.NEXT_PUBLIC_AWS_ORIGIN }}
+          echo $ {{ secrets.NEXT_PUBLIC_AWS_URL }}
+          echo $ {{ secrets.NEXT_PUBLIC_AWS_SECRET_KEY }}
+          echo $ {{ secrets.NEXT_PUBLIC_AWS_ACCESS_KEY }}
         
   # Build job
   build:
