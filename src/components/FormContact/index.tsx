@@ -1,5 +1,6 @@
 import { AwsClient } from 'aws4fetch';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import * as S from './styles';
 
 const Form = () => {
@@ -12,8 +13,7 @@ const Form = () => {
   const region = process.env.NEXT_PUBLIC_AWS_REGION ?? '';
   const Origin = process.env.NEXT_PUBLIC_AWS_ORIGIN;
 
-  // eslint-disable-next-line no-console
-  console.log('test env - origin', Origin);
+  // -----------------------
 
   function FormRequisicao() {
     async function fetchData() {
@@ -41,7 +41,7 @@ const Form = () => {
       console.log('teste - env-OPTIONS', aws);
     }
     fetchData();
-    window.location.reload();
+    toast.success('Formulário enviado com sucesso!');
   }
 
   // ==============================
@@ -132,6 +132,7 @@ const Form = () => {
           </div>
         </div>
       </section>
+      <ToastContainer />
     </S.Form>
   );
 };
