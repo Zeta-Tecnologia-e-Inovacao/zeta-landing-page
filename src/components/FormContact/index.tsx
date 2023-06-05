@@ -28,8 +28,6 @@ const Form = () => {
           whatsapp: outputNumber,
         }),
       };
-      // eslint-disable-next-line no-console
-      console.log('teste - env-OPTIONS', options);
       const aws = new AwsClient({
         accessKeyId,
         secretAccessKey,
@@ -37,8 +35,6 @@ const Form = () => {
         region,
       });
       await aws.fetch(url, options);
-      // eslint-disable-next-line no-console
-      console.log('teste - env-OPTIONS', aws);
     }
     fetchData();
     toast.success('Formulário enviado com sucesso!');
