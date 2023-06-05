@@ -1,5 +1,6 @@
 import { AwsClient } from 'aws4fetch';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import * as S from './styles';
 
 const Form = () => {
@@ -11,6 +12,8 @@ const Form = () => {
   const url = process.env.NEXT_PUBLIC_AWS_URL ?? '';
   const region = process.env.NEXT_PUBLIC_AWS_REGION ?? '';
   const Origin = process.env.NEXT_PUBLIC_AWS_ORIGIN;
+
+  // -----------------------
 
   function FormRequisicao() {
     async function fetchData() {
@@ -34,6 +37,7 @@ const Form = () => {
       await aws.fetch(url, options);
     }
     fetchData();
+    toast.success('Formulário enviado com sucesso!');
   }
 
   // ==============================
@@ -48,7 +52,7 @@ const Form = () => {
                 <div className='section-title mb-30'>
                   <h3>Entre em contato conosco</h3>
                 </div>
-                <form action='/' name='contact-form' className='form-style-one' method='POST'>
+                <form name='contact-form' className='form-style-one' method='POST'>
                   <div className='row'>
                     <div className='col-md-12'>
                       <div className='form-group'>
@@ -77,7 +81,7 @@ const Form = () => {
                     </div>
                     <div className='col-xl-12'>
                       <div className='form-group mb-0'>
-                        <button onClick={FormRequisicao} type='submit' className='theme-btn style-two-mt-15 w-100'>Enviar</button>
+                        <button type='button' onClick={FormRequisicao} className='theme-btn style-two-mt-15 w-100'>Enviar</button>
                       </div>
                     </div>
                   </div>
@@ -124,6 +128,7 @@ const Form = () => {
           </div>
         </div>
       </section>
+      <ToastContainer />
     </S.Form>
   );
 };
