@@ -1,5 +1,6 @@
 import { AwsClient } from 'aws4fetch';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import * as S from './styles';
 
 const Form = () => {
@@ -11,9 +12,6 @@ const Form = () => {
   const url = process.env.NEXT_PUBLIC_AWS_URL ?? '';
   const region = process.env.NEXT_PUBLIC_AWS_REGION ?? '';
   const Origin = process.env.NEXT_PUBLIC_AWS_ORIGIN;
-
-  // eslint-disable-next-line no-console
-  console.log('test env - origin', Origin);
 
   function FormRequisicao() {
     async function fetchData() {
@@ -28,8 +26,6 @@ const Form = () => {
           whatsapp: outputNumber,
         }),
       };
-      // eslint-disable-next-line no-console
-      console.log('teste - env-OPTIONS', options);
       const aws = new AwsClient({
         accessKeyId,
         secretAccessKey,
@@ -37,13 +33,10 @@ const Form = () => {
         region,
       });
       await aws.fetch(url, options);
-      // eslint-disable-next-line no-console
-      console.log('teste - env-OPTIONS', aws);
     }
     fetchData();
+    toast.success('Formulário enviado com sucesso!');
   }
-
-  // ==============================
 
   return (
     <S.Form>
@@ -131,6 +124,7 @@ const Form = () => {
           </div>
         </div>
       </section>
+      <ToastContainer />
     </S.Form>
   );
 };
