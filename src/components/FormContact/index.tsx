@@ -13,8 +13,6 @@ const Form = () => {
   const region = process.env.NEXT_PUBLIC_AWS_REGION ?? '';
   const Origin = process.env.NEXT_PUBLIC_AWS_ORIGIN;
 
-  // -----------------------
-
   function FormRequisicao() {
     async function fetchData() {
       const options = {
@@ -39,8 +37,6 @@ const Form = () => {
     fetchData();
     toast.success('Formulário enviado com sucesso!');
   }
-
-  // ==============================
 
   return (
     <S.Form>
