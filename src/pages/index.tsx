@@ -3,7 +3,6 @@ import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
 import { Spacer } from '@nextui-org/react';
 import Head from 'next/head';
-import Jumbotron from '@/components/jumbotron/jumbotron';
 import Card from '@/components/card/Cards';
 import About from '@/components/Sobre/about';
 import Parcerias from '@/components/Parceiros/parcerias';
@@ -27,8 +26,6 @@ const Home: NextPage = () => (
       <link rel='icon' href='/images/logo.svg' />
     </Head>
     <Header />
-    <Spacer y={1} />
-    <Jumbotron />
     <Spacer y={1} />
     <Card />
     <Spacer y={1} />
