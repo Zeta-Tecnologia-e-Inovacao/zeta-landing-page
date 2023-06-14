@@ -61,6 +61,10 @@ export const MenuHeader = styled.div`
   background-image: url(/images/slider/home.jpg)
 }
 
+.bi-grid-3x3-gap-fill{
+  color: blue;
+  font-size: 30px;
+}
 
 /******************* ## Jumbotron *******************/
 /*******************************************************/

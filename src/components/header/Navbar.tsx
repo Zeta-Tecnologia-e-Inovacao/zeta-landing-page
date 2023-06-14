@@ -25,7 +25,7 @@ const Header: NextPage = () => (
         <a className='navbar-brand' href='##'>
           <Image src='/images/Zeta-Logo.png' className='logo' alt='logo' width={200} height={200} />
         </a>
-        <button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' className='navbar-toggler' data-bs-target='#navbarSupportedContent' data-bs-toggle='collapse' type='button'><span className='navbar-toggler-icon' /></button>
+        <button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' className='navbar-toggler' data-bs-target='#navbarSupportedContent' data-bs-toggle='collapse' type='button'><i className='bi bi-grid-3x3-gap-fill' /></button>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
