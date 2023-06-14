@@ -88,7 +88,6 @@ header:after, section:after, footer:after {
 /*==================== BASE ====================*/
 
 
-
 /* Linha sob os textos */
 .Bord{
   border-bottom: 3px solid var(--background-color);
@@ -129,20 +128,15 @@ header:after, section:after, footer:after {
   } 
 }
 
+/* Texto em branco */
 .section-title.text-center .bg-text {
   color: white; 
 }
 
-/* Texto em branco */
 .text-white *, .text-white a,
 .text-white .sub-title {
   color: white; 
 }
-
-.text-white .service-two-item .icon i {
-  color: var(--primary-color); 
-}
-
 
   /* Posições */
 .rel {
@@ -170,7 +164,6 @@ header:after, section:after, footer:after {
   background-color: var(--heading-color); 
 }
 
-.heading,
 .section-title .bg-text,
 h1,
 .h1,
@@ -186,11 +179,11 @@ h6,
 .h6,
 .slider-area-two .slider-bg-text,
 .nav .nav-link,
-.nav li .nav-link,
-.about-five-images .experience-years .years {
+.nav li .nav-link{
   font-weight: 600;
   color: var(--heading-color);
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif; 
+}
 
 h1, .h1 {
   line-height: 1.1;
@@ -199,8 +192,8 @@ h1, .h1 {
 
 h3, .h3 {
   line-height: 1.25;
-  font-size: 32px; }
-
+  font-size: 32px; 
+}
 
 h4, .h4 {
   line-height: 1.35;
@@ -216,7 +209,6 @@ h6, .h6 {
 }
 
 
-/*******************************************************/
 /************** ## Padding Margin  *************/
 /*******************************************************/
 
@@ -1276,30 +1268,9 @@ h6, .h6 {
     margin-bottom: 110px; }
   .rmb-115,
   .rmy-115 {
-    margin-bottom: 115px; }
-  .rmb-120,
-  .rmy-120 {
-    margin-bottom: 120px; }
-  .rmb-125,
-  .rmy-125 {
-    margin-bottom: 125px; }
-  .rmb-130,
-  .rmy-130 {
-    margin-bottom: 130px; }
-  .rmb-135,
-  .rmy-135 {
-    margin-bottom: 135px; }
-  .rmb-140,
-  .rmy-140 {
-    margin-bottom: 140px; }
-  .rmb-145,
-  .rmy-145 {
-    margin-bottom: 145px; }
-  .rmb-150,
-  .rmy-150 {
-    margin-bottom: 150px; } }
-
-
+    margin-bottom: 115px; 
+  }
+}
 
 
 /** Estilo do botão **/
@@ -1329,41 +1300,42 @@ a.theme-btn {
   text-transform: capitalize;
   background-color: #0f1425; 
 }
-  .theme-btn i,
-  a.theme-btn i {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    margin-left: 10px; 
-  }
-  .theme-btn:hover,
-  a.theme-btn:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-    .theme-btn:hover:after,
-    a.theme-btn:hover:after {
-      border-radius: 50%;
-      -webkit-transform: translate(-50%, -50%) scale(0);
-      -ms-transform: translate(-50%, -50%) scale(0);
-      transform: translate(-50%, -50%) scale(0); 
-    }
-    .theme-btn:hover i,
-    a.theme-btn:hover i {
-      margin-left: 13px;
-      margin-right: -3px; 
-    }
-  .theme-btn.style-three,
-  a.theme-btn.style-three {
-    color: white;
-  }
-  @media only screen and (max-width: 575px) {
-    .theme-btn,
-    a.theme-btn {
-      padding: 9px 25px; 
-    }
-  }
+.theme-btn i,
+a.theme-btn i {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 10px; 
+}
 
+.theme-btn:hover,
+a.theme-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
 
+.theme-btn:hover:after,
+a.theme-btn:hover:after {
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -ms-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0); 
+}
 
+.theme-btn:hover i,
+a.theme-btn:hover i {
+  margin-left: 13px;
+  margin-right: -3px; 
+}
 
+.theme-btn.style-three,
+a.theme-btn.style-three {
+  color: white;
+}
+
+@media only screen and (max-width: 575px) {
+  .theme-btn,
+  a.theme-btn {
+    padding: 9px 25px; 
+  }
+}
