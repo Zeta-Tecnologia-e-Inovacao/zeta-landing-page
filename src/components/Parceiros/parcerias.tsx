@@ -14,7 +14,7 @@ const Parcerias: NextPage = () => (
         <div className='container'>
           <div className='row justify-content-center'>
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item delay-002s'>
+              <div className='feature-item'>
                 <div className='icon'>
                   <Image src='/images/parceiros/Fapesp.png' className='img-fluid card-img-top' alt='' width={450} height={320} />
                 </div>
@@ -22,47 +22,47 @@ const Parcerias: NextPage = () => (
             </div>
 
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item delay-002s'>
+              <div className='feature-item'>
                 <div className='icon'>
-                  <Image src='/images/parceiros/Finep.png' className='img-fluid card-img-top' alt='' width={450} height={400} />
+                  <Image src='/images/parceiros/finep.png' className='img-fluid card-img-top' alt='' width={450} height={320} />
                 </div>
               </div>
             </div>
 
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item delay-002s'>
+              <div className='feature-item'>
                 <div className='icon'>
-                  <Image src='/images/parceiros/Centelha.png' className='img-fluid card-img-top' alt='' width={450} height={400} />
+                  <Image src='/images/parceiros/centelha.png' className='img-fluid card-img-top' alt='' width={450} height={320} />
                 </div>
               </div>
             </div>
 
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item delay-002s'>
+              <div className='feature-item'>
                 <div className='icon'>
-                  <Image src='/images/parceiros/Sebrae.png' className='img-fluid  card-img-top' alt='' width={450} height={400} />
+                  <Image src='/images/parceiros/sebrae.png' className='img-fluid  card-img-top' alt='' width={450} height={320} />
                 </div>
               </div>
             </div>
 
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item delay-002s'>
+              <div className='feature-item'>
                 <div className='icon'>
-                  <Image src='/images/parceiros/PqTec.png' className='img-fluid  card-img-top' alt='' width={450} height={400} />
+                  <Image src='/images/parceiros/PqTec.png' className='img-fluid  card-img-top' alt='' width={450} height={320} />
                 </div>
               </div>
             </div>
 
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item delay-002s'>
+              <div className='feature-item'>
                 <div className='icon'>
-                  <Image src='/images/parceiros/Nexus.png' className='img-fluid  card-img-top' alt='' width={450} height={320} />
+                  <Image src='/images/parceiros/nexus.png' className='img-fluid  card-img-top' alt='' width={450} height={320} />
                 </div>
               </div>
             </div>
 
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item wow fadeInUp delay-002s animated animated'>
+              <div className='feature-item'>
                 <div className='icon'>
                   <Image src='/images/parceiros/MCTI.png' className='img-fluid card-img-top' alt='' width={450} height={320} />
                 </div>
@@ -70,7 +70,7 @@ const Parcerias: NextPage = () => (
             </div>
 
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item wow fadeInUp delay-002s animated animated'>
+              <div className='feature-item'>
                 <div className='icon'>
                   <Image src='/images/parceiros/Atomica.png' className='img-fluid card-img-top' alt='' width={450} height={320} />
                 </div>
