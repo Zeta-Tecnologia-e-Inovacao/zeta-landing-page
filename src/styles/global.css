@@ -22,6 +22,11 @@ html {
   scroll-behavior: smooth;
 }
 
+Image{
+  max-width: 100%;
+  display: inline-block;
+}
+
   body {
     color: var(--base-color);
     background: white;
@@ -37,7 +42,6 @@ html {
     --linhas-color: #0c90cf;
     --background-color: #0384FC;
   }
-
 
 a {
   color: var(--base-color);

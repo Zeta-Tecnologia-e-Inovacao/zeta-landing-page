@@ -6,7 +6,7 @@ import * as S from './styles';
 const Footer: NextPage = () => (
 
   <S.Footer>
-    <footer className='main-footer bgc-gray footer-white rel z-1'>
+    <footer className='main-footer bgc-gray footer-white rel z-1 mt-70'>
       <div className='footer-cta-comp'>
         <div className='container'>
           <div className='footer-banner-inner bgs-cover image'>
@@ -133,7 +133,7 @@ const Footer: NextPage = () => (
         </div>
       </div>
       <div className='footer-shapes'>
-        <Image className='shape two' src='/images/footer/footer-bg-shape.png' alt='Shape' width={530} height={433} />
+        <Image className='shape two' src='/images/footer/footer-bg-line-shape.png' alt='Shape' width={530} height={433} />
       </div>
     </footer>
   </S.Footer>
