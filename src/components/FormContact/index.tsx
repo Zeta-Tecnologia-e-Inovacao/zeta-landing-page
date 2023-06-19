@@ -108,7 +108,7 @@ const Form = () => {
                     </div>
                     <div className='content'>
                       <span>Email</span>
-                      <h5><a href='mailto.com'>zeta.technologia@gmail.com</a></h5>
+                      <h5><a href='#services'>contato@zetatecnologia.com.br</a></h5>
                     </div>
                   </div>
                   <div className='contact-info-item'>

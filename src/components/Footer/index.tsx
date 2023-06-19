@@ -20,6 +20,7 @@ const Footer: NextPage = () => (
             <div className='hotline'>
               <div className='content'>
                 <i className='bi bi-check2-circle'><a className='text-phone-two' href='callto:+55(12)99606-2530'>+55(12) 99606-2530</a></i>
+                <i className='bi bi-check2-circle'><a className='text-phone-two' href='#services'>contato@zetatecnologia.com.br</a></i>
               </div>
             </div>
           </div>
