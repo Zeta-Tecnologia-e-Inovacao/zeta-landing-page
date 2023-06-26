@@ -7,7 +7,7 @@ export const MenuHeader = styled.div`
  #header {
   background-color: #000000;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
 
   }
   
@@ -63,7 +63,7 @@ export const MenuHeader = styled.div`
 
 .bi-grid-3x3-gap-fill{
   color: blue;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 /******************* ## Jumbotron *******************/

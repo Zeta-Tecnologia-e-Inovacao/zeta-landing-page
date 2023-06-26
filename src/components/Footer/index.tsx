@@ -98,7 +98,6 @@ const Footer: NextPage = () => (
                 <div className='footer-widget widget_nav_menu wow fadeInUp delay-0-4s'>
                   <h4 className='footer-title'>Serviços</h4>
                   <ul className='list-style-two'>
-
                     <li>
                       <i className='bi bi-arrow-right-circle' />
                       <a href='#services'> Relé Bimanual</a>

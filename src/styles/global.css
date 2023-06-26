@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-Image{
+img{
   max-width: 100%;
   display: inline-block;
 }
