@@ -11,7 +11,7 @@ const CardPage: NextPage = () => (
       <div className='container'>
         <div className='row gap-100 align-items-center'>
           <div className='col-lg-5'>
-            <div className='services-content-three mb-200 wow fadeInUp delay-0-2s'>
+            <div className='services-content-three mb-200'>
               <div className='section-title mb-20'>
                 <span className='sub-title Bord mb-25'>Serviços incríveis</span>
                 <h1>
@@ -74,7 +74,6 @@ const CardPage: NextPage = () => (
         </div>
       </div>
     </section>
-    {/* <!-- Services Area Three end --> */}
   </Servicos>
 
 );

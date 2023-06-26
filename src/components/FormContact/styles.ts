@@ -185,6 +185,10 @@ h5{
     .contact-form-wrap {
       padding: 60px 25px; 
     } 
+
+    .content h5 a{
+      font-size: 13px;
+    }
   }
 
 

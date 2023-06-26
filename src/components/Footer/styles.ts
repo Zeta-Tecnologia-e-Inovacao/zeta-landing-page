@@ -160,6 +160,16 @@ export const Footer = styled.div`
   .footer-title {
     font-size: 24px; 
   } 
+
+  .list-style-two a{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .list-style-two a{
+    font-size: 12px;
+  }
 }
 
 .widget_newsletter .social-style-one a {

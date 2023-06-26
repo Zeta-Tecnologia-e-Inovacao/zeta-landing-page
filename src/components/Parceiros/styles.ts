@@ -10,14 +10,14 @@ font-family: 'Poppins', sans-serif; */
 }
 
 .feature-item {
-    width: 200px;
+    width: 140px;
     text-align: center;
     border-radius: 30px;
 }
 
 .card-img-top {
     border-radius: 2px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .icon:hover{
