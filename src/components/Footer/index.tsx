@@ -12,7 +12,7 @@ const Footer: NextPage = () => (
           <div className='footer-banner-inner bgs-cover image'>
             <div className='section-title wow fadeInLeft delay-0-2s'>
               <span className='title-footer'>O que você está esperando?</span>
-              <h3 className='sub-title-footer'>Entre em contato conosco!</h3>
+              <h3 className='sub-title-footer'>Venha alavancar seus projetos!</h3>
             </div>
             <a href='#contact' className='button-footer'>
               Saiba mais
@@ -43,7 +43,7 @@ const Footer: NextPage = () => (
               <h4 className='footer-title'>Nossa localização</h4>
               <p>
                 <i className='bi bi-geo-alt-fill' />
-                Brazil - São Paulo
+                Brasil - São Paulo
               </p>
               <p>
                 <i className='bi bi-geo-alt-fill' />
@@ -73,6 +73,12 @@ const Footer: NextPage = () => (
                       <i className='bi bi-arrow-right-circle' />
                       <Link href='/'> Home</Link>
                     </li>
+
+                    <li>
+                      <i className='bi bi-arrow-right-circle' />
+                      <a href='#services'> Serviços</a>
+                    </li>
+
                     <li>
                       <i className='bi bi-arrow-right-circle' />
                       <a href='#about'> Sobre nós</a>
@@ -80,15 +86,12 @@ const Footer: NextPage = () => (
 
                     <li>
                       <i className='bi bi-arrow-right-circle' />
-                      <a href='#services'> Serviços</a>
+                      <a href='#contact'> Nosso contato</a>
                     </li>
+
                     <li>
                       <i className='bi bi-arrow-right-circle' />
                       <a href='#parceiros'> Parcerias</a>
-                    </li>
-                    <li>
-                      <i className='bi bi-arrow-right-circle' />
-                      <a href='#contact'> Nosso contato</a>
                     </li>
                   </ul>
                 </div>
@@ -97,10 +100,6 @@ const Footer: NextPage = () => (
                 <div className='footer-widget widget_nav_menu wow fadeInUp delay-0-4s'>
                   <h4 className='footer-title'>Serviços</h4>
                   <ul className='list-style-two'>
-                    <li>
-                      <i className='bi bi-arrow-right-circle' />
-                      <a href='#services'> Relé Bimanual</a>
-                    </li>
                     <li>
                       <i className='bi bi-arrow-right-circle' />
                       <a href='#services'> Desenvolvimento Web</a>

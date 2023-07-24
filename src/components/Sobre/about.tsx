@@ -6,7 +6,7 @@ import * as S from './styles';
 const About: NextPage = () => (
 
   <S.About>
-    <section className='about-area pt-25 pb-80'>
+    <section className='about-area pt-25 pb-80' id='about'>
       <div className='container'>
         <div className='row align-items-center gap-100'>
           <div className='col-md-6'>
