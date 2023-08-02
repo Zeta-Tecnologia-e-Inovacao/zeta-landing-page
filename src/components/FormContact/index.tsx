@@ -46,7 +46,9 @@ const Form = () => {
             <div className='col-md-6 mt-30 mb-30 '>
               <div className='contact-form bg-white p-80 rmb-55'>
                 <div className='section-title mb-30'>
-                  <h3>Entraremos em contato com você</h3>
+                  <h3>
+                    Deixe seus dados e um consultor especializado entrará em contato com você!
+                  </h3>
                 </div>
                 <form name='contact-form' className='form-style-one' method='POST'>
                   <div className='row'>
@@ -87,7 +89,7 @@ const Form = () => {
             <div className='col-md-5'>
               <div className='contact-info-wrap'>
                 <div className='section-title mb-40'>
-                  <span className='sub-title mb-10'>Gostaria de entrar em contato? </span>
+                  {/* <span className='sub-title mb-10'>Gostaria de entrar em contato? </span> */}
                   <h2>
                     Revolucione seus projetos com a Zeta e alcance o sucesso!
                   </h2>
