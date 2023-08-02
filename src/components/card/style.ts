@@ -65,9 +65,9 @@ export const Servicos = styled.div`
 
 /* S */
 .service-item {
-  padding: 40px;
+  padding: 25px;
   background: #fff6;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   -webkit-box-shadow: 10px 0 60px rgba(102, 83, 232, 0.15);
   box-shadow: 10px 0 60px rgba(102, 83, 232, 0.15); 
 }
@@ -79,8 +79,8 @@ export const Servicos = styled.div`
   }
   @media only screen and (max-width: 375px) {
     .service-item {
-      padding-left: 35px;
-      padding-right: 35px; 
+      padding-left: 30px;
+      padding-right: 30px; 
     } 
   }
   .service-item .icon {

@@ -38,10 +38,10 @@ const Header: NextPage = () => (
               <a className='nav-link' href='#about'>Sobre nós</a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#parcerias'>Parcerias</a>
+              <a className='nav-link' href='#contact'>Contato</a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#contact'>Contato</a>
+              <a className='nav-link' href='#parcerias'>Parcerias</a>
             </li>
           </ul>
         </div>

@@ -28,11 +28,12 @@ const Home: NextPage = () => (
     <Header />
     <Spacer y={1} />
     <Card />
-    <Parcerias />
     <Spacer y={2} />
     <About />
     <Spacer y={4} />
     <Form />
+    <Spacer y={4} />
+    <Parcerias />
     <Spacer y={4} />
     <Footer />
   </div>
