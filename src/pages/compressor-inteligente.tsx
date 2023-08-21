@@ -1,22 +1,21 @@
-/* eslint-disable @next/next/no-typos */
 /* eslint-disable react/prop-types */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import axios from 'axios';
 import 'animate.css'; // Importe os estilos do animate.css
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import * as S from '@/components/compressor/styles';
 
 import Balancer from 'react-wrap-balancer';
 import { useRouter } from 'next/router';
-import { NextPage, GetStaticProps } from 'next';
+import { NextPage, GetServerSideProps } from 'next';
 import Script from 'next/script';
 import Image from 'next/image';
 
 interface AwsJsonData {
   timer: any;
+  formatted_time: any;
+  timestamp: any;
   status: boolean;
 }
 
@@ -46,7 +45,7 @@ const formatTimeVerbose = (timer: number): string => {
 
 const formatStatus = (status: boolean): string => (status ? 'Ligado' : 'Desligado');
 
-export const getStaticProps: GetStaticProps<AwsJsonProps> = async () => {
+export const getServerSideProps: GetServerSideProps<AwsJsonProps> = async () => {
   const url = process.env.NEXT_PUBLIC_AWS_URL_COMPRESSOR ?? '';
   // Fazer uma chamada à API da AWS
   const response = await axios.get<AwsJsonData>(url);
