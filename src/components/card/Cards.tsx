@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import type { NextPage } from 'next';
 import Balancer from 'react-wrap-balancer';
 import { Servicos } from './style';
@@ -33,7 +34,7 @@ const CardPage: NextPage = () => (
               <div className='col-sm-6'>
                 <div className='service-item'>
                   <div className='icon'><i className='bi bi-motherboard' /></div>
-                  <h4><i className='bi bi-check2-circle'><a href='service-details.html' className='text-a'>Embarcados e Iot</a></i></h4>
+                  <h4><i className='bi bi-check2-circle'><Link href='/compressor-inteligente' className='text-a'>Embarcados e Iot</Link></i></h4>
                   <p>
                     <Balancer>
                       Fornecemos um sistema de IoT (Internet das Coisas) poderoso e
