@@ -96,30 +96,6 @@ const Parcerias: NextPage = () => (
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
               <div className='feature-item wow fadeInUp delay-002s animated animated'>
                 <div className='icon'>
-                  <Image src='/images/parceiros/Klabin.png' className='img-fluid card-img-top' alt='Klabin' width={360} height={320} />
-                </div>
-              </div>
-            </div>
-
-            <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item wow fadeInUp delay-002s animated animated'>
-                <div className='icon'>
-                  <Image src='/images/parceiros/CPFL.png' className='img-fluid card-img-top' alt='CPFL Energia' width={360} height={320} />
-                </div>
-              </div>
-            </div>
-
-            <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item wow fadeInUp delay-002s animated animated'>
-                <div className='icon'>
-                  <Image src='/images/parceiros/Metro.png' className='img-fluid card-img-top' alt='Metro' width={360} height={320} />
-                </div>
-              </div>
-            </div>
-
-            <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
-              <div className='feature-item wow fadeInUp delay-002s animated animated'>
-                <div className='icon'>
                   <Image src='/images/parceiros/Summit.png' className='img-fluid card-img-top' alt='Startup-Summit' width={360} height={320} />
                 </div>
               </div>
