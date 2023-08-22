@@ -1,27 +1,17 @@
 /* eslint-disable no-console */
 import axios from 'axios';
-import * as S from '@/components/compressor/styles';
+import * as S from '@/components/compressor/compressor';
 import Script from 'next/script';
 import Image from 'next/image';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
-interface AwsJsonData {
-  timer: number;
-  status: boolean;
-}
-
-interface AwsJsonProps {
-  timer: string;
-  status: string;
-  timerExt: string;
-}
-
+// Função para converter o timer no formato HH:mm:ss
 const formatTime = (timer: number): string => {
   const date = new Date(timer * 1000);
   return date.toISOString().substr(11, 8); // Formato HH:mm:ss
 };
 
+// Função para converter o timer em uma frase por extenso
 const formatTimeVerbose = (timer: number): string => {
   const hours = Math.floor(timer / 3600);
   const minutes = Math.floor((timer % 3600) / 60);
@@ -34,43 +24,40 @@ const formatTimeVerbose = (timer: number): string => {
   return `${hoursText} hora(s), ${minutesText} minuto(s) e ${secondsText} segundo(s)`;
 };
 
+// Breve teste para verificar se o compressor está ligado ou desligado
 const formatStatus = (status: boolean): string => (status ? 'Ligado' : 'Desligado');
 
-export async function getStaticProps() {
-  const url = process.env.NEXT_PUBLIC_AWS_URL_COMPRESSOR || '';
-  try {
-    const response = await axios.get<AwsJsonData>(url);
-    const { timer, status } = response.data;
-
-    const dataformatted = formatTime(timer);
-    const TimerExtenso = formatTimeVerbose(timer);
-    const ResultStatus = formatStatus(status);
-
-    return {
-      props: { timer: dataformatted, status: ResultStatus, timerExt: TimerExtenso },
-      revalidate: 25,
-    };
-  } catch (error) {
-    console.error('Erro ao buscar dados da API AWS:', error);
-    return {
-      props: { timer: '', status: '', timerExt: '' },
-    };
-  }
-}
-
-// eslint-disable-next-line react/prop-types
-const CompressorPage: React.FC<AwsJsonProps> = ({ timer, status, timerExt }) => {
-  const router = useRouter();
+const CompressorPage = () => {
+  const [TimerAtual, setTimer] = useState('');
+  const [timerExtenso, setTimerExt] = useState('');
+  const [statusAtual, setStatus] = useState('');
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      router.reload(); // Recarrega a página
-    }, 10000); // 10000 milissegundos = 10 segundos
+    const fetchData = async () => {
+      const url = process.env.NEXT_PUBLIC_AWS_URL_COMPRESSOR || '';
 
-    return () => {
-      clearInterval(interval); // Limpa o intervalo quando o componente é desmontado
+      try {
+        const response = await axios.get(url);
+        const { timer, status } = response.data;
+
+        const dataformatted = formatTime(timer);
+        const TimerExtenso = formatTimeVerbose(timer);
+        const ResultStatus = formatStatus(status);
+
+        // Envio de dados
+        setTimer(dataformatted);
+        setTimerExt(TimerExtenso);
+        setStatus(ResultStatus);
+      } catch (error) {
+        console.error('Erro ao buscar dados da API AWS:', error);
+      }
     };
-  }, [router]);
+
+    fetchData();
+    const interval = setInterval(fetchData, 10000); // Atualiza a cada 25 segundos
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <S.Compressor>
       <Script
@@ -110,12 +97,12 @@ const CompressorPage: React.FC<AwsJsonProps> = ({ timer, status, timerExt }) => 
               <div className='coix text-center'>
                 <div className='wow bounceInLeft resp' data-wow-duration='1s'>
                   <h3>O compressor está ligado por:</h3>
-                  <h4>{timer}</h4>
-                  <h5>{timerExt}</h5>
+                  <h4>{TimerAtual}</h4>
+                  <h5>{timerExtenso}</h5>
                 </div>
                 <div className='resp'>
                   <h3>Último status:</h3>
-                  <h4>{status}</h4>
+                  <h4>{statusAtual}</h4>
                 </div>
               </div>
             </div>
