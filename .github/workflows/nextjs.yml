@@ -17,6 +17,7 @@ env:
   NEXT_PUBLIC_AWS_ORIGIN: ${{ secrets.NEXT_PUBLIC_AWS_ORIGIN }}
   NEXT_PUBLIC_AWS_SECRET_KEY: ${{ secrets.NEXT_PUBLIC_AWS_SECRET_KEY }}
   NEXT_PUBLIC_AWS_URL: ${{ secrets.NEXT_PUBLIC_AWS_URL }}
+  NEXT_PUBLIC_AWS_URL_COMPRESSOR: ${{ secrets.NEXT_PUBLIC_AWS_URL_COMPRESSOR }}
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
