@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  basePath: '/zeta-landing-page'
-
 }
 
+module.exports = nextConfig
