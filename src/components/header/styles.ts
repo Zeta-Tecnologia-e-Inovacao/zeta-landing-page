@@ -10,11 +10,9 @@ export const MenuHeader = styled.div`
   padding: 10px;
 
   }
-  
   #header p {
     margin-bottom: 0;
   }
-
   #header h4{
   margin-bottom: 0;
   color: #FFF;

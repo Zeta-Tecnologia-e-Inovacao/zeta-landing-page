@@ -19,18 +19,15 @@ font-family: 'Poppins', sans-serif; */
     border-radius: 2px;
     padding: 15px;
 }
-
 .icon:hover{
     background-color: #fff;
     box-shadow: 3px 0 60px rgba(120, 80, 243, 0.2); 
 }
-
 .feature-item .icon {
     line-height: 1;
     font-size: 65px;
     transition: 0.5s;
 }
-
 p{
     font-size: 15px;
     color: black;

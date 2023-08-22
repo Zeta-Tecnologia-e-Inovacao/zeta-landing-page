@@ -46,7 +46,6 @@ const About: NextPage = () => (
       </div>
     </section>
   </S.About>
-
 );
 
 export default About;

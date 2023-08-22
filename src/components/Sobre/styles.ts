@@ -42,7 +42,6 @@ h2, .h2, .counter-text-wrap .count-text, .pricing-plan-item .price {
   line-height: 1.25;
   font-size: 42px; 
 }
-
 h4, .h4 {
   line-height: 1.35;
   font-size: 22px; }
@@ -51,7 +50,6 @@ h4, .h4 {
   padding: 0;
   margin-bottom: 30px;
 }
-
 .service-item {
     transition: 0.5s;
     padding: 40px 35px 15px;
