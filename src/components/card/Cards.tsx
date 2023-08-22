@@ -2,12 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 import type { NextPage } from 'next';
 import Balancer from 'react-wrap-balancer';
-import { Servicos } from './style';
+import * as S from './style';
 
 const CardPage: NextPage = () => (
 
-  <Servicos>
-
+  <S.Servicos>
     <section className='services-area py-100 rpy-70 rel z-1' id='services'>
       <div className='container'>
         <div className='row gap-100 align-items-center'>
@@ -74,7 +73,7 @@ const CardPage: NextPage = () => (
         </div>
       </div>
     </section>
-  </Servicos>
+  </S.Servicos>
 
 );
 
