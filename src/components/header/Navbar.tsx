@@ -64,7 +64,6 @@ const Header: NextPage = () => (
       </div>
     </section>
   </S.MenuHeader>
-
 );
 
 export default Header;

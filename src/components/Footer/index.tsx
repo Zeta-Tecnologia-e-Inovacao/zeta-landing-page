@@ -73,22 +73,18 @@ const Footer: NextPage = () => (
                       <i className='bi bi-arrow-right-circle' />
                       <Link href='/'> Home</Link>
                     </li>
-
                     <li>
                       <i className='bi bi-arrow-right-circle' />
                       <a href='#services'> Serviços</a>
                     </li>
-
                     <li>
                       <i className='bi bi-arrow-right-circle' />
                       <a href='#about'> Sobre nós</a>
                     </li>
-
                     <li>
                       <i className='bi bi-arrow-right-circle' />
                       <a href='#contact'> Nosso contato</a>
                     </li>
-
                     <li>
                       <i className='bi bi-arrow-right-circle' />
                       <a href='#parceiros'> Parcerias</a>

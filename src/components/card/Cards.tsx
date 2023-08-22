@@ -43,7 +43,6 @@ const CardPage: NextPage = () => (
                     </Balancer>
                   </p>
                 </div>
-
                 <div className='service-item'>
                   <div className='icon'><i className='bi bi-code-slash' /></div>
                   <h4><i className='bi bi-check2-circle'><a href='service-details.html' className='text-a'>Desenvolvimento Web</a></i></h4>

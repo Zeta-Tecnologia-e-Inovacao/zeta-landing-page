@@ -76,7 +76,6 @@ const Parcerias: NextPage = () => (
                 </div>
               </div>
             </div>
-
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
               <div className='feature-item wow fadeInUp delay-002s animated animated'>
                 <div className='icon'>
@@ -84,7 +83,6 @@ const Parcerias: NextPage = () => (
                 </div>
               </div>
             </div>
-
             <div className='col-xl-2 col-lg-3 col-md-4 col-6 col-small'>
               <div className='feature-item wow fadeInUp delay-002s animated animated'>
                 <div className='icon'>

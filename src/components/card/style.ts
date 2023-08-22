@@ -18,15 +18,12 @@ export const Servicos = styled.div`
   text-decoration: none;
   outline: none; 
 }
-
 .text-a:hover {
   color: var(--background-color); 
 }
-
 .section-title h1{
   font-weight: 600;
 }
-
 .service-item p{
   font-weight: 500;
   color: var(--base-color);
