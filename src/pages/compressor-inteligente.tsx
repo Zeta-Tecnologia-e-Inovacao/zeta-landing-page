@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import axios from 'axios';
-import * as S from '@/components/compressor/styles';
+import * as S from '@/styles/compressor';
 import Script from 'next/script';
 import Image from 'next/image';
 import { useEffect } from 'react';
