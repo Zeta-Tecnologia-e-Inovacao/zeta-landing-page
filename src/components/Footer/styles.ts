@@ -276,7 +276,6 @@ a{
 .list-style-two i{
   color: white;
 }
-
 `;
 
 export default Footer;

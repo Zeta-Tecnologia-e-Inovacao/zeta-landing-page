@@ -191,7 +191,6 @@ h5{
     }
   }
 
-
 .contact-image{
   background-image: url(/images/form/bg-form.png);
   margin-bottom: 150px;
