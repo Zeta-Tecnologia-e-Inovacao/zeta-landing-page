@@ -22,7 +22,7 @@ const Home: NextPage = () => (
       <meta name='language' content='Portuguese' />
       <meta name='revisit-after' content='7 days' />
       <meta property='og:title' content='Zeta | Tecnologia e Inovação' />
-      <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificials' />
+      <meta property='og:description' content='Desenvolvemos soluções inteligentes, inovadoras e dispositivos IoT com integração na nuvem e inteligência artificial' />
       <link rel='icon' href='/images/logo.svg' />
     </Head>
     <Header />

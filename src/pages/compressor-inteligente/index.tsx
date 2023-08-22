@@ -1,34 +1,63 @@
+/* eslint-disable no-console */
 import axios from 'axios';
-import * as S from '@/components/compressor/styles';
-import { NextPage, GetStaticProps } from 'next';
+import * as S from '@/utils/styles';
 import Script from 'next/script';
 import Image from 'next/image';
-import {
-  AwsJsonProps, AwsJsonData,
-  formatTime, formatTimeVerbose,
-  formatStatus,
-} from '@/components/compressor/formats';
 
-export const getStaticProps: GetStaticProps<AwsJsonProps> = async () => {
-  const url = process.env.NEXT_PUBLIC_AWS_URL_COMPRESSOR ?? '';
-  // Fazer uma chamada à API da AWS
-  const response = await axios.get<AwsJsonData>(url);
+interface AwsJsonData {
+  timer: number;
+  status: boolean;
+}
 
-  // Extrair os dados JSON da resposta
-  const { timer, status } = response.data;
+interface AwsJsonProps {
+  timer: string;
+  status: string;
+  timerExt: string;
+}
 
-  const dataformatted = formatTime(timer);
-  const TimerExtenso = formatTimeVerbose(timer);
-  const ResultStatus = formatStatus(status);
-
-  return {
-    // Retornando o timer, o status e o texto por extenso do timer
-    props: { timer: dataformatted, status: ResultStatus, timerExt: TimerExtenso },
-  };
+const formatTime = (timer: number): string => {
+  const date = new Date(timer * 1000);
+  return date.toISOString().substr(11, 8); // Formato HH:mm:ss
 };
 
+const formatTimeVerbose = (timer: number): string => {
+  const hours = Math.floor(timer / 3600);
+  const minutes = Math.floor((timer % 3600) / 60);
+  const remainingSeconds = timer % 60;
+
+  const hoursText = hours.toString().padStart(2, '0');
+  const minutesText = minutes.toString().padStart(2, '0');
+  const secondsText = remainingSeconds.toString().padStart(2, '0');
+
+  return `${hoursText} hora(s), ${minutesText} minuto(s) e ${secondsText} segundo(s)`;
+};
+
+const formatStatus = (status: boolean): string => (status ? 'Ligado' : 'Desligado');
+
+export async function getStaticProps() {
+  const url = process.env.NEXT_PUBLIC_AWS_URL_COMPRESSOR || '';
+  try {
+    const response = await axios.get<AwsJsonData>(url);
+    const { timer, status } = response.data;
+
+    const dataformatted = formatTime(timer);
+    const TimerExtenso = formatTimeVerbose(timer);
+    const ResultStatus = formatStatus(status);
+
+    return {
+      props: { timer: dataformatted, status: ResultStatus, timerExt: TimerExtenso },
+      revalidate: 30,
+    };
+  } catch (error) {
+    console.error('Erro ao buscar dados da API AWS:', error);
+    return {
+      props: { timer: '', status: '', timerExt: '' },
+    };
+  }
+}
+
 // eslint-disable-next-line react/prop-types
-const PageCompressor: NextPage<AwsJsonProps> = ({ timer, status, timerExt }) => (
+const CompressorPage: React.FC<AwsJsonProps> = ({ timer, status, timerExt }) => (
 
   <S.Compressor>
     <Script
@@ -84,4 +113,4 @@ const PageCompressor: NextPage<AwsJsonProps> = ({ timer, status, timerExt }) => 
 
 );
 
-export default PageCompressor;
+export default CompressorPage;
