@@ -1,7 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Balancer from 'react-wrap-balancer';
-import * as S from './styles';
+import * as S from '@/components/Sobre/styles';
 
 const About: NextPage = () => (
 

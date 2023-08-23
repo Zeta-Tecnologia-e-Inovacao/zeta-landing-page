@@ -3,14 +3,11 @@ import Header from '@/components/header/Navbar';
 import type { NextPage } from 'next';
 import { Spacer } from '@nextui-org/react';
 import Head from 'next/head';
-import Card from '../components/card/Cards';
-import About from '../components/Sobre/about';
-import Parcerias from '../components/Parceiros/parcerias';
-import Form from '../components/FormContact';
-import Footer from '../components/Footer';
-import '../styles/global.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import Card from '@/components/card/Cards';
+import About from '@/components/Sobre/about';
+import Parcerias from '@/components/Parceiros/parcerias';
+import Form from '@/components/FormContact';
+import Footer from '@/components/Footer/index';
 
 const Home: NextPage = () => (
   <div>

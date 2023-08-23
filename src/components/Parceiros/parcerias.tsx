@@ -1,7 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import * as S from './styles';
+import * as S from '@/components/Parceiros/styles';
 
 const Parcerias: NextPage = () => (
   <S.CssParceria>
