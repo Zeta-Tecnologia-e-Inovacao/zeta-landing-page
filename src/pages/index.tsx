@@ -8,6 +8,9 @@ import About from '../components/Sobre/about';
 import Parcerias from '../components/Parceiros/parcerias';
 import Form from '../components/FormContact';
 import Footer from '../components/Footer';
+import '../styles/global.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Home: NextPage = () => (
   <div>

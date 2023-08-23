@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import * as S from './styles';
+import * as S from '@/components/Footer/styles';
 
 const Footer: NextPage = () => (
 
