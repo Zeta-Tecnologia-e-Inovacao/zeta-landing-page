@@ -33,6 +33,18 @@ const CompressorPage = () => {
   const [statusAtual, setStatus] = useState('');
 
   useEffect(() => {
+    // Define um intervalo para recarregar a página a cada 30 segundos
+    const interval = setInterval(() => {
+      window.location.reload();
+    }, 31000); // 31 segundos em milissegundos
+
+    // Limpa o intervalo quando o componente é desmontado
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  useEffect(() => {
     const fetchData = async () => {
       const url = process.env.NEXT_PUBLIC_AWS_URL_COMPRESSOR || '';
 
@@ -54,7 +66,7 @@ const CompressorPage = () => {
     };
 
     fetchData();
-    const interval = setInterval(fetchData, 10000); // Atualiza a cada 25 segundos
+    const interval = setInterval(fetchData, 30000); // Atualiza a cada 30 segundos
 
     return () => clearInterval(interval);
   }, []);
