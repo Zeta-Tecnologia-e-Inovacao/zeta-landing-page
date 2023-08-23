@@ -1,7 +1,7 @@
 import { AwsClient } from 'aws4fetch';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import * as S from './styles';
+import * as S from '@/components/FormContact/styles';
 
 const Form = () => {
   const [outputName, setOutputName] = useState('');

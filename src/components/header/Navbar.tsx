@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import { Image } from '@nextui-org/react';
 import Script from 'next/script';
-import * as S from './styles';
+import * as S from '@/components/header/styles';
 
 const Header: NextPage = () => (
 
