@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import type { NextPage } from 'next';
 import Balancer from 'react-wrap-balancer';
-import * as S from './style';
+import * as S from '@/styles/Cards';
 
 const CardPage: NextPage = () => (
 
