@@ -1,15 +1,11 @@
 import styled from 'styled-components';
 
 export const Compressor = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap'); */
 
-html {
-  scroll-behavior: smooth;
+h4{
+  text-align: center;
 }
-
-  h4{
-    text-align: center;
-  }
 
 .sliderT{
   background-color: #2D2C59;
