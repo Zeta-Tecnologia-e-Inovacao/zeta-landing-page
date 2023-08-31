@@ -2,7 +2,6 @@
 import axios from 'axios';
 import Script from 'next/script';
 import Image from 'next/image';
-import * as S from '@/components/compressor/styled';
 import { useEffect, useState } from 'react';
 
 // Função para converter o timer no formato HH:mm:ss
@@ -71,7 +70,7 @@ const CompressorPage = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <S.Compressor>
+    <div>
       <Script
         src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js'
         integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r'
@@ -121,7 +120,7 @@ const CompressorPage = () => {
           </div>
         </div>
       </section>
-    </S.Compressor>
+    </div>
   );
 };
 
