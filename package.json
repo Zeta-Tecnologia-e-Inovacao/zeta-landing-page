@@ -25,6 +25,7 @@
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "flaticon": "^0.1.0",
+    "gh-pages": "^6.0.0",
     "lucide-react": "^0.219.0",
     "next": "13.2.4",
     "node": "^19.8.1",
@@ -37,6 +38,7 @@
     "styled-components": "^5.3.9",
     "typescript": "5.0.3"
   },
+  "homepage": "https://www.zetatecnologia.com.br",
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.3.0",
     "@types/styled-components": "^5.1.26",
