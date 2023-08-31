@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import axios from 'axios';
 import Script from 'next/script';
+import * as S from '@/components/compressor/styled';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
@@ -70,7 +71,7 @@ const CompressorPage = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div>
+    <S.Compressor>
       <Script
         src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js'
         integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r'
@@ -120,7 +121,7 @@ const CompressorPage = () => {
           </div>
         </div>
       </section>
-    </div>
+    </S.Compressor>
   );
 };
 
